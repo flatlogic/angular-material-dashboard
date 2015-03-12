@@ -1,25 +1,35 @@
-<div layout="vertical" layout-fill>
+<div layout="column">
 
   <header ng-include="'components/navbar/navbar.html'"></header>
 
   <md-content>
-    <section class="jumbotron">
+    <md-card layout-align="center center">
       <h1>Welcome to Angular Material Dashboard</h1>
-    </section>
+    </md-card>
 
-    <div layout-align="center">
-      <md-card>
-        <h3>This is md-card</h3>
+    <div layout="row">
+      <md-card flex="60">
+        <h3>md-card flex="60"</h3>
       </md-card>
 
-      <md-card>
-        <md-checkbox>This is md-checkbox</md-checkbox>
+      <md-card flex>
+        <h3>md-card flex</h3>
       </md-card>
     </div>
+
+    <md-card layout="row" layout-align="space-around center">
+      <md-checkbox class="md-primary">This is md-checkbox</md-checkbox>
+
+      <section layout="row">
+        <md-button href="#" class="md-primary md-raised">
+          md-button
+        </md-button>
+      </section>
+    </md-card>
   </md-content>
 
   <footer>
-    <md-toolbar layout="row" layout-align="center center">
+    <md-toolbar layout="row">
       <p>This is md-toolbar</p>
     </md-toolbar>
   </footer>

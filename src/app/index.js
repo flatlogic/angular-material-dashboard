@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ui.router', 'ngMaterial'])
+angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
+  'ngSanitize', 'ui.router', 'ngMaterial'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
@@ -11,4 +12,9 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch', 'ng
 
     $urlRouterProvider.otherwise('/');
   })
-;
+
+  .config(function($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+      .primaryPalette('blue-grey')
+      .accentPalette('grey');
+  });

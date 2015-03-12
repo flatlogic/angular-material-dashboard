@@ -1,10 +1,11 @@
-<md-toolbar layout="row" layout-align="center center" ng-controller="NavbarCtrl">
-
-  <md-button href="#">Dashboard</md-button>
-
-  <section flex layout="row" layout-align="left center">
-    <md-button href="#" class="md-raised">md-button 1</md-button>
-    <md-button href="#" class="md-raised">md-button 2</md-button>
-    <md-button href="#" class="md-raised">md-button 3</md-button>
-  </section>
+<md-toolbar layout="row" ng-controller="NavbarCtrl">
+  <md-button ng-click="openLeftMenu()">Dashboard</md-button>
 </md-toolbar>
+
+<div layout="row" ng-controller="NavbarCtrl">
+  <md-sidenav md-component-id="left" class="md-sidenav-left" layout="column">
+    <md-button href="#" class="md-primary">Action 1</md-button>
+    <md-button href="#" class="md-primary">Action 2</md-button>
+    <md-button href="#" class="md-primary">Action 3</md-button>
+  </md-sidenav>
+</div>
