@@ -1,37 +1,26 @@
-<div layout="column">
+<md-toolbar layout="row">
+  <md-button class="menu" hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Show Menu">
+    <md-icon md-svg-icon="menu"></md-icon>
+  </md-button>
+  <h1>Angular Material Admin</h1>
+  <md-button class="share" md-no-ink ng-click="vm.showActions($event)" aria-label="Open Actions">
+    <md-icon md-svg-icon="actions"></md-icon>
+  </md-button>
+</md-toolbar>
 
-  <header ng-include="'components/navbar/navbar.html'"></header>
-
-  <md-content>
-    <md-card layout-align="center center">
-      <h1>Welcome to Angular Material Dashboard</h1>
-    </md-card>
-
-    <div layout="row">
-      <md-card flex="60">
-        <h3>md-card flex="60"</h3>
-      </md-card>
-
-      <md-card flex>
-        <h3>md-card flex</h3>
-      </md-card>
-    </div>
-
-    <md-card layout="row" layout-align="space-around center">
-      <md-checkbox class="md-primary">This is md-checkbox</md-checkbox>
-
-      <section layout="row">
-        <md-button href="#" class="md-primary md-raised">
-          md-button
+<div flex layout="row">
+  <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2" md-component-id="left">
+    <md-list>
+      <md-item ng-repeat="item in vm.menuItems">
+        <md-button ng-click="vm.selectItem(item)" ng-class="{'selected' : item === vm.selected }">
+          <md-icon md-svg-icon="{{item.icon}}" class="avatar"></md-icon>
+          {{item.name}}
         </md-button>
-      </section>
-    </md-card>
+      </md-item>
+    </md-list>
+  </md-sidenav>
+
+  <md-content flex id="content">
+    <h2>{{vm.selected.name}}</h2>
   </md-content>
-
-  <footer>
-    <md-toolbar layout="row">
-      <p>This is md-toolbar</p>
-    </md-toolbar>
-  </footer>
-
 </div>

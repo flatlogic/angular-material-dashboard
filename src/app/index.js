@@ -1,20 +1,26 @@
 'use strict';
 
 angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
-  'ngSanitize', 'ui.router', 'ngMaterial'])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  'ngSanitize', 'ui.router', 'ngMaterial', 'sidebar'])
+
+  .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
+                    $mdIconProvider) {
     $stateProvider
       .state('home', {
         url: '/',
         templateUrl: 'app/main/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainController',
+        controllerAs: "vm"
       });
 
     $urlRouterProvider.otherwise('/');
-  })
 
-  .config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('blue-grey')
       .accentPalette('grey');
+
+    $mdIconProvider
+      .defaultIconSet('./assets/svg/icons.svg', 128)
+      .icon('menu', './assets/svg/menu.svg', 24)
+      .icon('actions', './assets/svg/actions.svg', 24);
   });
