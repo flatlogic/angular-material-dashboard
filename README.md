@@ -1,5 +1,7 @@
 # Angular material admin dashboard
 
+[DEMO](http://micrum.github.io/angular-material-admin)
+
 ## Getting started
 
 Clone project:

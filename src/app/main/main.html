@@ -5,9 +5,12 @@
   <md-list>
     <md-item ng-repeat="item in vm.menuItems">
       <md-item-content>
-        <md-button layout="row" flex ng-click="vm.selectItem(item)" ng-class="{'md-accent' : item === vm.selected }">
-          <div flex="30" class="md-tile-content"><md-icon md-svg-icon="{{item.icon}}"></md-icon></div>
-          <div flex="70" class="md-tile-content">{{item.name}}</div>
+        <md-button layout="row" flex ng-click="vm.selectItem(item)"
+                   ng-class="{'md-accent' : item === vm.selected }">
+          <div flex="30" class="md-tile-content">
+            <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+          </div>
+          <div layout="row" layout-align="start" class="md-tile-content">{{item.name}}</div>
         </md-button>
       </md-item-content>
     </md-item>
@@ -25,7 +28,7 @@
     </md-button>
   </md-toolbar>
 
-  <md-content>
+  <md-content layout="column" layout-align="center center">
     <h2>{{vm.selected.name}}</h2>
   </md-content>
 </div>
