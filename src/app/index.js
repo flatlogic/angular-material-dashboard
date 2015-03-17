@@ -16,8 +16,8 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
     $urlRouterProvider.otherwise('/');
 
     $mdThemingProvider.theme('default')
-      .primaryPalette('blue-grey')
-      .accentPalette('grey');
+      .primaryPalette('teal')
+      .accentPalette('orange');
 
     $mdIconProvider
       .defaultIconSet('./assets/svg/icons.svg', 128)

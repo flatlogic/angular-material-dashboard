@@ -1,26 +1,28 @@
 <md-toolbar layout="row">
-  <md-button class="menu" hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Show Menu">
+  <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Show Menu">
     <md-icon md-svg-icon="menu"></md-icon>
   </md-button>
   <h1>Angular Material Admin</h1>
-  <md-button class="share" md-no-ink ng-click="vm.showActions($event)" aria-label="Open Actions">
+  <md-button md-no-ink ng-click="vm.showActions($event)" aria-label="Open Actions">
     <md-icon md-svg-icon="actions"></md-icon>
   </md-button>
 </md-toolbar>
 
-<div flex layout="row">
-  <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2" md-component-id="left">
-    <md-list>
-      <md-item ng-repeat="item in vm.menuItems">
-        <md-button ng-click="vm.selectItem(item)" ng-class="{'selected' : item === vm.selected }">
-          <md-icon md-svg-icon="{{item.icon}}" class="avatar"></md-icon>
-          {{item.name}}
-        </md-button>
-      </md-item>
-    </md-list>
+<div layout="row">
+  <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2 md-sidenav-left" md-component-id="left">
+      <md-list>
+        <md-item ng-repeat="item in vm.menuItems">
+          <md-item-content>
+            <md-button layout="row" flex ng-click="vm.selectItem(item)" ng-class="{'md-accent' : item === vm.selected }">
+              <div flex="30" class="md-tile-content"><md-icon md-svg-icon="{{item.icon}}"></md-icon></div>
+              <div flex="70" class="md-tile-content">{{item.name}}</div>
+            </md-button>
+          </md-item-content>
+        </md-item>
+      </md-list>
   </md-sidenav>
 
-  <md-content flex id="content">
+  <md-content>
     <h2>{{vm.selected.name}}</h2>
   </md-content>
 </div>

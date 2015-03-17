@@ -10,11 +10,11 @@
   function MainController( navService, $mdSidenav, $mdBottomSheet, $log, $q) {
     var vm = this;
 
-    vm.selected     = null;
-    vm.menuItems    = [ ];
-    vm.selectItem   = selectItem;
-    vm.toggleItemsList   = toggleItemsList;
-    vm.showActions  = showActions;
+    vm.selected = null;
+    vm.menuItems = [ ];
+    vm.selectItem = selectItem;
+    vm.toggleItemsList = toggleItemsList;
+    vm.showActions = showActions;
 
     navService
           .loadAllItems()

@@ -3,14 +3,15 @@
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
     <svg version="1.1" id="svg-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="100%" height="100%" viewBox="-140 -140 800 800" xml:space="preserve">
-    	<g id="messenger">
-    		<path d="M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z"/>
-    	</g>
+       width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+      <g id="messenger">
+        <path d="M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z"/>
+      </g>
     </svg>
 
     <svg version="1.1" id="svg-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="100%" height="100%" viewBox="-140 -140 800 800" xml:space="preserve">
+       width="507.451px" height="507.45px" viewBox="0 0 507.451 507.45" style="enable-background:new 0 0 507.451 507.45;"
+       xml:space="preserve">
       <g id="settings">
         <path d="M440.813,280.5c0-7.65,2.55-15.3,2.55-25.5s0-17.85-2.55-25.5l53.55-43.35c5.1-5.1,5.1-10.2,2.55-15.3l-51-89.25
           c-2.55-2.55-7.649-5.1-15.3-2.55l-63.75,25.5c-12.75-10.2-28.05-17.85-43.35-25.5l-10.2-66.3C315.863,5.1,308.212,0,303.113,0
@@ -24,7 +25,8 @@
     </svg>
 
     <svg version="1.1" id="svg-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="100%" height="100%" viewBox="-140 -140 800 800" xml:space="preserve">
+       width="535.5px" height="535.5px" viewBox="0 0 535.5 535.5" style="enable-background:new 0 0 535.5 535.5;" xml:space="preserve"
+      >
       <g id="notifications-on">
         <path d="M142.8,53.55l-35.7-35.7C45.9,63.75,5.1,135.15,0,216.75h51C56.1,147.9,89.25,89.25,142.8,53.55z M484.5,216.75h51
           c-5.1-81.6-43.35-153-104.55-198.9l-35.7,35.7C446.25,89.25,479.4,147.9,484.5,216.75z M433.5,229.5
@@ -35,7 +37,7 @@
     </svg>
 
     <svg version="1.1" id="svg-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="100%" height="100%" viewBox="-140 -140 800 800" xml:space="preserve">
+       width="459px" height="459px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
       <g id="palette">
         <path d="M229.5,0C102,0,0,102,0,229.5S102,459,229.5,459c20.4,0,38.25-17.85,38.25-38.25c0-10.2-2.55-17.85-10.2-25.5
           c-5.1-7.65-10.2-15.3-10.2-25.5c0-20.4,17.851-38.25,38.25-38.25h45.9c71.4,0,127.5-56.1,127.5-127.5C459,91.8,357,0,229.5,0z
@@ -47,7 +49,7 @@
     </svg>
 
     <svg version="1.1" id="svg-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="100%" height="100%" viewBox="-140 -140 800 800" xml:space="preserve">
+       width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
       <g id="star">
         <polygon points="255,402.212 412.59,497.25 370.897,318.011 510,197.472 326.63,181.738 255,12.75 183.371,181.738 0,197.472
           139.103,318.011 97.41,497.25 		"/>
@@ -55,7 +57,8 @@
     </svg>
 
     <svg version="1.1" id="svg-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="100%" height="100%" viewBox="-140 -140 800 800" xml:space="preserve">
+       width="446.25px" height="446.25px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;"
+       xml:space="preserve">
       <g id="search">
         <path d="M318.75,280.5h-20.4l-7.649-7.65c25.5-28.05,40.8-66.3,40.8-107.1C331.5,73.95,257.55,0,165.75,0S0,73.95,0,165.75
           S73.95,331.5,165.75,331.5c40.8,0,79.05-15.3,107.1-40.8l7.65,7.649v20.4L408,446.25L446.25,408L318.75,280.5z M165.75,280.5

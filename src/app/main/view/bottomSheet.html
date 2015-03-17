@@ -1,13 +1,9 @@
-<md-bottom-sheet class="md-list md-has-header">
-    <md-subheader>
-        Actions
-    </md-subheader>
-
-    <md-list>
-      <md-item ng-repeat="action in vm.actions">
-        <md-button ng-click="vm.performAction(action)">
-            {{action.name}}
-        </md-button>
-      </md-item>
-    </md-list>
+<md-bottom-sheet class="md-grid">
+  <md-list>
+    <md-item ng-repeat="action in vm.actions">
+      <md-button class="md-grid-item-content" ng-click="vm.performAction(action)">
+        <p class="md-grid-text">{{action.name}}</p>
+      </md-button>
+    </md-item>
+  </md-list>
 </md-bottom-sheet>
