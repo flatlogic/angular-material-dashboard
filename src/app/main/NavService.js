@@ -7,7 +7,7 @@
   function navService($q){
     var menuItems = [
       {
-        name: 'Messages',
+        name: 'Dashboard',
         icon: 'svg-1'
       },
       {
@@ -29,6 +29,10 @@
       {
         name: 'Search',
         icon: 'svg-6'
+      },
+      {
+        name: 'Messages',
+        icon: 'svg-7'
       }
     ];
 

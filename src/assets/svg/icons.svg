@@ -3,9 +3,11 @@
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
     <svg version="1.1" id="svg-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
-      <g id="messenger">
-        <path d="M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z"/>
+       width="446.25px" height="446.25px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;"
+       xml:space="preserve">
+      <g id="dashboard">
+        <path d="M0,102h102V0H0V102z M153,408h102V306H153V408z M0,408h102V306H0V408z M0,255h102V153H0V255z M153,255h102V153H153V255z
+          M306,0v102h102V0H306z M153,102h102V0H153V102z M306,255h102V153H306V255z M306,408h102V306H306V408z"/>
       </g>
     </svg>
 
@@ -63,6 +65,13 @@
         <path d="M318.75,280.5h-20.4l-7.649-7.65c25.5-28.05,40.8-66.3,40.8-107.1C331.5,73.95,257.55,0,165.75,0S0,73.95,0,165.75
           S73.95,331.5,165.75,331.5c40.8,0,79.05-15.3,107.1-40.8l7.65,7.649v20.4L408,446.25L446.25,408L318.75,280.5z M165.75,280.5
           C102,280.5,51,229.5,51,165.75S102,51,165.75,51S280.5,102,280.5,165.75S229.5,280.5,165.75,280.5z"/>
+      </g>
+    </svg>
+
+    <svg version="1.1" id="svg-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+      <g id="messenger">
+        <path d="M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z"/>
       </g>
     </svg>
     </defs>
