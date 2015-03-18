@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
-  'ngSanitize', 'ui.router', 'ngMaterial', 'sidebar'])
+  'ngSanitize', 'ui.router', 'ngMaterial', 'admin'])
 
   .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
                     $mdIconProvider) {
@@ -50,10 +50,12 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       })
       .state('home.search', {
         url: '/search',
+        templateUrl: 'app/partials/search.html',
+        controller: 'SearchController',
+        controllerAs: 'vm',
         data: {
           title: 'Search'
-        },
-        templateUrl: 'app/partials/search.html'
+        }
       })
       .state('home.messages', {
         url: '/messages',

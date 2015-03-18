@@ -1,1 +1,16 @@
-<h3>search</h3>
+<md-autocomplete placeholder="Search country"
+  md-selected-item="vm.selectedCountry"
+  md-search-text="vm.searchText"
+  md-items="item in vm.querySearch(vm.searchText)"
+  md-item-text="item.display">
+  <span md-highlight-text="vm.searchText">{{item.display}}</span>
+</md-autocomplete>
+<p>Special input with a drop-down of all possible matches to a custom query.</p>
+<p>Input will cache results when performing a query.</p>
+<md-card>
+  <md-card-content>
+    <p>Selected country:
+      <b>{{vm.selectedCountry.display || 'No country selected'}}</b>
+    </p>
+  </md-card-content>
+</md-card>

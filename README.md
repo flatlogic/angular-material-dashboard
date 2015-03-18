@@ -16,4 +16,14 @@ Install dependencies:
 Run development web-server:
 
     $ gulp serve
+    
+## TODO
+    
+* notifications
+* messages list
+* md-card based widget     
+* table
+* form
+* dashboard
+* user bar
 

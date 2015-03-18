@@ -1,13 +1,13 @@
 (function(){
 
   angular
-       .module('sidebar')
+       .module('admin')
        .controller('MainController', [
           'navService', '$mdSidenav', '$mdBottomSheet', '$log', '$q', '$state',
           MainController
        ]);
 
-  function MainController( navService, $mdSidenav, $mdBottomSheet, $log, $q, $state) {
+  function MainController(navService, $mdSidenav, $mdBottomSheet, $log, $q, $state) {
     var vm = this;
 
     vm.menuItems = [ ];
@@ -18,8 +18,8 @@
 
     navService
           .loadAllItems()
-          .then( function( menuItems ) {
-            vm.menuItems    = [].concat(menuItems);
+          .then(function(menuItems) {
+            vm.menuItems = [].concat(menuItems);
           });
 
     function toggleItemsList() {
@@ -48,13 +48,16 @@
         });
 
         function SheetController( $mdBottomSheet ) {
-          this.actions = [
+          var vm = this;
+
+          vm.actions = [
             { name: 'Action1'   },
             { name: 'Action2' },
             { name: 'Action3' },
             { name: 'Action4' }
           ];
-          this.performAction = function(action) {
+
+          vm.performAction = function(action) {
             $mdBottomSheet.hide(action);
           };
         }

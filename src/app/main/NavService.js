@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('sidebar')
+  angular.module('admin')
          .service('navService', ['$q', navService]);
 
   function navService($q){
@@ -10,6 +10,11 @@
         name: 'Dashboard',
         icon: 'svg-1',
         sref: '.dashboard'
+      },
+      {
+        name: 'Search',
+        icon: 'svg-6',
+        sref: '.search'
       },
       {
         name: 'Settings',
@@ -32,21 +37,14 @@
         sref: '.bookmarks'
       },
       {
-        name: 'Search',
-        icon: 'svg-6',
-        sref: '.search'
-      },
-      {
         name: 'Messages',
         icon: 'svg-7',
         sref: '.messages'
       }
     ];
 
-    // Promise-based API
     return {
       loadAllItems : function() {
-        // Simulate async nature of real remote calls
         return $q.when(menuItems);
       }
     };
