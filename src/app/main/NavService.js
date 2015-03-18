@@ -8,31 +8,38 @@
     var menuItems = [
       {
         name: 'Dashboard',
-        icon: 'svg-1'
+        icon: 'svg-1',
+        sref: '.dashboard'
       },
       {
         name: 'Settings',
-        icon: 'svg-2'
+        icon: 'svg-2',
+        sref: '.settings'
       },
       {
         name: 'Notifications',
-        icon: 'svg-3'
+        icon: 'svg-3',
+        sref: '.notifications'
       },
       {
         name: 'Appearance',
-        icon: 'svg-4'
+        icon: 'svg-4',
+        sref: '.appearance'
       },
       {
         name: 'Bookmarks',
-        icon: 'svg-5'
+        icon: 'svg-5',
+        sref: '.bookmarks'
       },
       {
         name: 'Search',
-        icon: 'svg-6'
+        icon: 'svg-6',
+        sref: '.search'
       },
       {
         name: 'Messages',
-        icon: 'svg-7'
+        icon: 'svg-7',
+        sref: '.messages'
       }
     ];
 

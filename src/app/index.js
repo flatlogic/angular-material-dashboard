@@ -7,13 +7,63 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
                     $mdIconProvider) {
     $stateProvider
       .state('home', {
-        url: '/',
+        url: '',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: "vm"
+        controllerAs: 'vm',
+        abstract: true
+      })
+      .state('home.dashboard', {
+        url: '/dashboard',
+        data: {
+          title: 'Dashboard'
+        },
+        templateUrl: 'app/partials/dashboard.html'
+      })
+      .state('home.settings', {
+        url: '/settings',
+        data: {
+          title: 'Settings'
+        },
+        templateUrl: 'app/partials/settings.html'
+      })
+      .state('home.notifications', {
+        url: '/notifications',
+        data: {
+          title: 'Notifications'
+        },
+        templateUrl: 'app/partials/notifications.html'
+      })
+      .state('home.appearance', {
+        url: '/appearance',
+        data: {
+          title: 'Appearance'
+        },
+        templateUrl: 'app/partials/appearance.html'
+      })
+      .state('home.bookmarks', {
+        url: '/bookmarks',
+        data: {
+          title: 'Bookmarks'
+        },
+        templateUrl: 'app/partials/bookmarks.html'
+      })
+      .state('home.search', {
+        url: '/search',
+        data: {
+          title: 'Search'
+        },
+        templateUrl: 'app/partials/search.html'
+      })
+      .state('home.messages', {
+        url: '/messages',
+        data: {
+          title: 'Messages'
+        },
+        templateUrl: 'app/partials/messages.html'
       });
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/dashboard');
 
     $mdThemingProvider.theme('default')
       .primaryPalette('teal')

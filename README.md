@@ -1,6 +1,6 @@
 # Angular material admin dashboard
 
-[DEMO](http://micrum.github.io/angular-material-admin)
+[DEMO](http://micrum.github.io/angular-material-admin/site/)
 
 ## Getting started
 

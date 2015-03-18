@@ -3,24 +3,23 @@
   angular
        .module('sidebar')
        .controller('MainController', [
-          'navService', '$mdSidenav', '$mdBottomSheet', '$log', '$q',
+          'navService', '$mdSidenav', '$mdBottomSheet', '$log', '$q', '$state',
           MainController
        ]);
 
-  function MainController( navService, $mdSidenav, $mdBottomSheet, $log, $q) {
+  function MainController( navService, $mdSidenav, $mdBottomSheet, $log, $q, $state) {
     var vm = this;
 
-    vm.selected = null;
     vm.menuItems = [ ];
     vm.selectItem = selectItem;
     vm.toggleItemsList = toggleItemsList;
     vm.showActions = showActions;
+    vm.title = $state.current.data.title;
 
     navService
           .loadAllItems()
           .then( function( menuItems ) {
             vm.menuItems    = [].concat(menuItems);
-            vm.selected = menuItems[0];
           });
 
     function toggleItemsList() {
@@ -32,7 +31,7 @@
     }
 
     function selectItem (item) {
-      vm.selected = angular.isNumber(item) ? $scope.menuItems[item] : item;
+      vm.title = item.name;
       vm.toggleItemsList();
     }
 
