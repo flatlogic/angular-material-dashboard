@@ -258,7 +258,8 @@
         return allCountries.map(function(country) {
           return {
             value: country.name.toLowerCase(),
-            display: country.name
+            display: country.name,
+            code: country.code
           };
         });
       }
