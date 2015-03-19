@@ -22,7 +22,6 @@ Run development web-server:
 * notifications
 * md-card based widget     
 * table
-* form
 * dashboard
 * user bar
 

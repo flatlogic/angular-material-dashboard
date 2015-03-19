@@ -20,12 +20,14 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
         },
         templateUrl: 'app/partials/dashboard.html'
       })
-      .state('home.settings', {
-        url: '/settings',
+      .state('home.profile', {
+        url: '/profile',
+        templateUrl: 'app/partials/profile.html',
+        controller: 'ProfileController',
+        controllerAs: 'vm',
         data: {
-          title: 'Settings'
-        },
-        templateUrl: 'app/partials/settings.html'
+          title: 'Profile'
+        }
       })
       .state('home.notifications', {
         url: '/notifications',

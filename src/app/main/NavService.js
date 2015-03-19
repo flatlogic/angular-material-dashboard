@@ -15,6 +15,11 @@
         sref: '.dashboard'
       },
       {
+        name: 'Profile',
+        icon: 'svg-2',
+        sref: '.profile'
+      },
+      {
         name: 'Messages',
         icon: 'svg-7',
         sref: '.messages'
@@ -23,11 +28,6 @@
         name: 'Search',
         icon: 'svg-6',
         sref: '.search'
-      },
-      {
-        name: 'Settings',
-        icon: 'svg-2',
-        sref: '.settings'
       },
       {
         name: 'Notifications',
