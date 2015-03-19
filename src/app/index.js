@@ -59,10 +59,12 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       })
       .state('home.messages', {
         url: '/messages',
+        controller: 'MessagesController',
+        controllerAs: 'vm',
+        templateUrl: 'app/partials/messages.html',
         data: {
           title: 'Messages'
-        },
-        templateUrl: 'app/partials/messages.html'
+        }
       });
 
     $urlRouterProvider.otherwise('/dashboard');

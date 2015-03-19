@@ -20,7 +20,6 @@ Run development web-server:
 ## TODO
     
 * notifications
-* messages list
 * md-card based widget     
 * table
 * form

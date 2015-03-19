@@ -2,7 +2,10 @@
   'use strict';
 
   angular.module('admin')
-         .service('navService', ['$q', navService]);
+          .service('navService', [
+          '$q',
+          navService
+  ]);
 
   function navService($q){
     var menuItems = [
@@ -10,6 +13,11 @@
         name: 'Dashboard',
         icon: 'svg-1',
         sref: '.dashboard'
+      },
+      {
+        name: 'Messages',
+        icon: 'svg-7',
+        sref: '.messages'
       },
       {
         name: 'Search',
@@ -35,11 +43,6 @@
         name: 'Bookmarks',
         icon: 'svg-5',
         sref: '.bookmarks'
-      },
-      {
-        name: 'Messages',
-        icon: 'svg-7',
-        sref: '.messages'
       }
     ];
 
