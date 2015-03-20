@@ -33,7 +33,9 @@
       <md-option ng-click="vm.showActions($event)" value="2">Actions</md-option>
     </md-select>
 
-    <img flex='10' ng-src="/assets/images/user.svg" alt="admin image">
+    <!-- TODO: replace md-icon to ng-src and fix images paths in build -->
+    <md-icon flex="10" md-svg-icon="user"></md-icon>
+
   </md-toolbar>
 
   <md-content flex class="md-padding">
