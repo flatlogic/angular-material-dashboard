@@ -15,10 +15,12 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       })
       .state('home.dashboard', {
         url: '/dashboard',
+        templateUrl: 'app/partials/dashboard.html',
+        controller: 'DashboardController',
+        controllerAs: 'vm',
         data: {
           title: 'Dashboard'
-        },
-        templateUrl: 'app/partials/dashboard.html'
+        }
       })
       .state('home.profile', {
         url: '/profile',
@@ -27,6 +29,24 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
         controllerAs: 'vm',
         data: {
           title: 'Profile'
+        }
+      })
+      .state('home.messages', {
+        url: '/messages',
+        controller: 'MessagesController',
+        controllerAs: 'vm',
+        templateUrl: 'app/partials/messages.html',
+        data: {
+          title: 'Messages'
+        }
+      })
+      .state('home.search', {
+        url: '/search',
+        templateUrl: 'app/partials/search.html',
+        controller: 'SearchController',
+        controllerAs: 'vm',
+        data: {
+          title: 'Search'
         }
       })
       .state('home.notifications', {
@@ -49,24 +69,6 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
           title: 'Bookmarks'
         },
         templateUrl: 'app/partials/bookmarks.html'
-      })
-      .state('home.search', {
-        url: '/search',
-        templateUrl: 'app/partials/search.html',
-        controller: 'SearchController',
-        controllerAs: 'vm',
-        data: {
-          title: 'Search'
-        }
-      })
-      .state('home.messages', {
-        url: '/messages',
-        controller: 'MessagesController',
-        controllerAs: 'vm',
-        templateUrl: 'app/partials/messages.html',
-        data: {
-          title: 'Messages'
-        }
       });
 
     $urlRouterProvider.otherwise('/dashboard');

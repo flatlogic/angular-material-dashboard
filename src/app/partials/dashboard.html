@@ -1,1 +1,15 @@
-<h3>dash</h3>
+<md-card>
+  <md-card-content>
+    <md-button class="md-raised md-primary" ng-disabled="!vm.launchAllowed" ng-click="vm.showAlert()">
+      Launch rockets!
+    </md-button>
+
+    <md-checkbox aria-label="Checkbox 1" ng-change="vm.checkLaunch()" ng-model="vm.launchToMars">
+      To Mars
+    </md-checkbox>
+
+    <md-checkbox aria-label="Checkbox 2" ng-change="vm.checkLaunch()" ng-model="vm.launchToVenus">
+      To Venus
+    </md-checkbox>
+  </md-card-content>
+</md-card>
