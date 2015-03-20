@@ -48,27 +48,6 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
         data: {
           title: 'Search'
         }
-      })
-      .state('home.notifications', {
-        url: '/notifications',
-        data: {
-          title: 'Notifications'
-        },
-        templateUrl: 'app/partials/notifications.html'
-      })
-      .state('home.appearance', {
-        url: '/appearance',
-        data: {
-          title: 'Appearance'
-        },
-        templateUrl: 'app/partials/appearance.html'
-      })
-      .state('home.bookmarks', {
-        url: '/bookmarks',
-        data: {
-          title: 'Bookmarks'
-        },
-        templateUrl: 'app/partials/bookmarks.html'
       });
 
     $urlRouterProvider.otherwise('/dashboard');

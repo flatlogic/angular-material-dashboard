@@ -21,7 +21,6 @@ Run development web-server:
     
 ## TODO
     
-* notifications
 * md-card based widget     
 * table
 * dashboard

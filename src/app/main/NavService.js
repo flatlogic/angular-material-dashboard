@@ -21,28 +21,13 @@
       },
       {
         name: 'Messages',
-        icon: 'svg-7',
+        icon: 'svg-4',
         sref: '.messages'
       },
       {
         name: 'Search',
-        icon: 'svg-6',
-        sref: '.search'
-      },
-      {
-        name: 'Notifications',
         icon: 'svg-3',
-        sref: '.notifications'
-      },
-      {
-        name: 'Appearance',
-        icon: 'svg-4',
-        sref: '.appearance'
-      },
-      {
-        name: 'Bookmarks',
-        icon: 'svg-5',
-        sref: '.bookmarks'
+        sref: '.search'
       }
     ];
 

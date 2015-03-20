@@ -3,11 +3,11 @@
   angular
        .module('admin')
        .controller('MainController', [
-          'navService', '$mdSidenav', '$mdBottomSheet', '$log', '$q', '$state',
+          'navService', '$mdSidenav', '$mdBottomSheet', '$log', '$q', '$state', '$mdToast',
           MainController
        ]);
 
-  function MainController(navService, $mdSidenav, $mdBottomSheet, $log, $q, $state) {
+  function MainController(navService, $mdSidenav, $mdBottomSheet, $log, $q, $state, $mdToast) {
     var vm = this;
 
     vm.menuItems = [ ];
@@ -15,6 +15,7 @@
     vm.toggleItemsList = toggleItemsList;
     vm.showActions = showActions;
     vm.title = $state.current.data.title;
+    vm.showSimpleToast = showSimpleToast;
 
     navService
           .loadAllItems()
@@ -33,6 +34,7 @@
     function selectItem (item) {
       vm.title = item.name;
       vm.toggleItemsList();
+      vm.showSimpleToast(vm.title);
     }
 
     function showActions($event) {
@@ -63,6 +65,14 @@
         }
     }
 
+    function showSimpleToast(title) {
+      $mdToast.show(
+        $mdToast.simple()
+          .content(title)
+          .hideDelay(2000)
+          .position('top right')
+      );
+    }
   }
 
 })();
