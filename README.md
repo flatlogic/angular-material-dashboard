@@ -19,6 +19,12 @@ Run development web-server:
 
     $ gulp serve
     
+## Build to Github pages  
+  
+* Merge *master* to *gh-pages*
+* run `gulp build`
+* Push *gh-pages* branch to remote origin  
+    
 ## TODO
     
 * md-card based widget     
