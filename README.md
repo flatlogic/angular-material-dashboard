@@ -25,5 +25,3 @@ Run development web-server:
 * md-card based widget     
 * table
 * dashboard
-* user bar
-

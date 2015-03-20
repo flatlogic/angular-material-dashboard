@@ -25,10 +25,15 @@
     <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Show Menu">
       <md-icon md-svg-icon="menu"></md-icon>
     </md-button>
+
     <h2 class="md-toolbar-tools">{{vm.title}}</h2>
-    <md-button md-no-ink ng-click="vm.showActions($event)" aria-label="Open Actions">
-      <md-icon md-svg-icon="actions"></md-icon>
-    </md-button>
+
+    <md-select flex='10' placeholder="Admin" ng-model="admin">
+      <md-option ui-sref="home.profile" value="1">Profile</md-option>
+      <md-option ng-click="vm.showActions($event)" value="2">Actions</md-option>
+    </md-select>
+
+    <img flex='10' ng-src="/assets/images/user.svg" alt="admin image">
   </md-toolbar>
 
   <md-content flex class="md-padding">
