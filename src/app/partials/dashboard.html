@@ -1,4 +1,8 @@
+<h2 class="md-display-2">Material Design Space Center</h2>
+
 <md-card>
+  <md-progress-linear class="md-warn" md-mode="buffer" value="{{vm.startValue}}" md-buffer-value="{{vm.bufferValue}}"></md-progress-linear>
+
   <md-card-content>
     <md-button class="md-raised md-primary" ng-disabled="!vm.launchAllowed" ng-click="vm.showAlert()">
       Launch rockets!

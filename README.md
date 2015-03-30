@@ -1,6 +1,7 @@
 # Angular material admin dashboard
 
-This application built without any custom CSS.
+This application based on [Angular Material](https://github.com/angular/material) 
+and built without any custom CSS.
 
 [DEMO](http://micrum.github.io/angular-material-admin/site/)
 
@@ -29,4 +30,3 @@ Run development web-server:
     
 * md-card based widget     
 * table
-* dashboard
