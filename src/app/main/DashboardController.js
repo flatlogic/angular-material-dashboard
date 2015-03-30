@@ -3,11 +3,11 @@
   angular
     .module('admin')
     .controller('DashboardController', [
-      '$mdDialog',
+      '$mdDialog','$timeout', '$q', 'countriesService', 'messagesService',
       DashboardController
     ]);
 
-  function DashboardController($mdDialog) {
+  function DashboardController($mdDialog, $timeout, $q, countriesService, messagesService) {
     var vm = this;
 
     vm.launchAllowed = false;
@@ -17,6 +17,17 @@
     vm.showAlert = showAlert;
     vm.startValue = 0;
     vm.bufferValue = 1;
+    vm.countries = countriesService.loadAll();
+    vm.selectedCountry = null;
+    vm.searchText = null;
+    vm.querySearch = querySearch;
+    vm.messages = [ ];
+
+    messagesService
+      .loadAllItems()
+      .then(function(messages) {
+        vm.messages = [].concat(messages);
+      });
 
     function checkLaunch() {
       vm.launchAllowed = vm.launchToMars || vm.launchToVenus;
@@ -41,6 +52,20 @@
       }, 500);
     }
 
+    function querySearch (query) {
+      var results = query ? vm.countries.filter( createFilterFor(query) ) : [],
+        deferred;
+      deferred = $q.defer();
+      $timeout(function () { deferred.resolve( results ); }, Math.random() * 1000, false);
+      return deferred.promise;
+    }
+
+    function createFilterFor(query) {
+      var lowercaseQuery = angular.lowercase(query);
+      return function filterFn(state) {
+        return (state.value.indexOf(lowercaseQuery) === 0);
+      };
+    }
   }
 
 })();

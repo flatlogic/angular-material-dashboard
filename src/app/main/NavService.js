@@ -20,14 +20,9 @@
         sref: '.profile'
       },
       {
-        name: 'Messages',
+        name: 'Table',
         icon: 'svg-4',
-        sref: '.messages'
-      },
-      {
-        name: 'Search',
-        icon: 'svg-3',
-        sref: '.search'
+        sref: '.table'
       }
     ];
 

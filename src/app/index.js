@@ -31,22 +31,13 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
           title: 'Profile'
         }
       })
-      .state('home.messages', {
-        url: '/messages',
-        controller: 'MessagesController',
+      .state('home.table', {
+        url: '/table',
+        controller: 'TableController',
         controllerAs: 'vm',
-        templateUrl: 'app/partials/messages.html',
+        templateUrl: 'app/partials/table.html',
         data: {
-          title: 'Messages'
-        }
-      })
-      .state('home.search', {
-        url: '/search',
-        templateUrl: 'app/partials/search.html',
-        controller: 'SearchController',
-        controllerAs: 'vm',
-        data: {
-          title: 'Search'
+          title: 'Table'
         }
       });
 

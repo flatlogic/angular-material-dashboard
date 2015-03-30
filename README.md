@@ -28,10 +28,9 @@ Run development web-server:
     
 ## TODO
     
-* grid-list on dashboard    
+* Adjust grid-list on dashboard    
 * Page with table
-* Move messages to dashboard
-* Move search to dashboard
-* Add widget directive with md-toolbar
-* Adjust profile select 
+* Add widget directive with md-toolbar #2
+* Wrap dashboard components to widget
+* Adjust top toolbar select 
 * Organize CSS
