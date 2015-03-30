@@ -1,13 +1,34 @@
 <h2 class="md-display-2">Material Design Space Center</h2>
 
-<md-card>
-  <md-progress-linear class="md-warn" md-mode="buffer" value="{{vm.startValue}}" md-buffer-value="{{vm.bufferValue}}"></md-progress-linear>
+<section layout-padding>
+  <md-grid-list flex md-cols="3" md-row-height="3:2" md-gutter="12px">
+    <md-grid-tile class="md-whiteframe-z1">
+      <md-icon md-svg-icon="svg-6"></md-icon>
+      <md-grid-tile-footer>
+        <h3>Houston</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
 
-  <md-card-content>
-    <md-button class="md-raised md-primary" ng-disabled="!vm.launchAllowed" ng-click="vm.showAlert()">
-      Launch rockets!
-    </md-button>
+    <md-grid-tile class="md-whiteframe-z1">
+      <md-icon md-svg-icon="svg-7"></md-icon>
+      <md-grid-tile-footer>
+        <h3>Notifications</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
 
+    <md-grid-tile class="md-whiteframe-z1">
+      <md-icon md-svg-icon="svg-8"></md-icon>
+      <md-grid-tile-footer>
+        <h3>Spaceship</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+  </md-grid-list>
+</section>
+
+<section layout-padding>
+  <md-progress-linear class="md-warn" md-mode="buffer" value="{{vm.startValue}}"
+                      md-buffer-value="{{vm.bufferValue}}"></md-progress-linear>
+  <md-whiteframe flex class="md-whiteframe-z1" layout="column" layout-align="center start">
     <md-checkbox aria-label="Checkbox 1" ng-change="vm.checkLaunch()" ng-model="vm.launchToMars">
       To Mars
     </md-checkbox>
@@ -15,5 +36,9 @@
     <md-checkbox aria-label="Checkbox 2" ng-change="vm.checkLaunch()" ng-model="vm.launchToVenus">
       To Venus
     </md-checkbox>
-  </md-card-content>
-</md-card>
+
+    <md-button class="md-raised md-primary" ng-disabled="!vm.launchAllowed" ng-click="vm.showAlert()">
+      Launch rockets!
+    </md-button>
+  </md-whiteframe>
+</section>

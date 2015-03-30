@@ -3,7 +3,7 @@
 This application based on [Angular Material](https://github.com/angular/material) 
 and built without any custom CSS.
 
-[DEMO](http://micrum.github.io/angular-material-admin/site/)
+Check out [DEMO](http://micrum.github.io/angular-material-admin/site/)
 
 ## Getting started
 
@@ -28,5 +28,10 @@ Run development web-server:
     
 ## TODO
     
-* md-card based widget     
-* table
+* grid-list on dashboard    
+* Page with table
+* Move messages to dashboard
+* Move search to dashboard
+* Add widget directive with md-toolbar
+* Adjust profile select 
+* Organize CSS

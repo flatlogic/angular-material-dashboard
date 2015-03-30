@@ -36,6 +36,8 @@
           .finally(function() {
             alert = undefined;
           });
+        vm.startValue = 0;
+        vm.bufferValue = 1;
       }, 500);
     }
 
