@@ -1,0 +1,85 @@
+<!-- TODO: move section element to directive -->
+<!-- TODO: replace md-icon to ng-src and fix images paths in build -->
+<div class="messages" ng-controller="MessagesController as vm">
+  <md-content class="messages-content">
+    <section>
+      <md-subheader class="md-primary">New Orders</md-subheader>
+      <md-list layout="column">
+        <md-item ng-repeat="message in vm.messages">
+          <md-divider></md-divider>
+          <md-item-content>
+            <md-icon flex="10" md-svg-icon="user"></md-icon>
+            <div class="md-tile-content">
+              <h3>{{message.subject}}</h3>
+              <h4>{{message.userName}}</h4>
+              <p>{{message.text}}</p>
+            </div>
+            <div class="md-tile-content">
+              <h4>{{message.date}}</h4>
+            </div>
+          </md-item-content>
+        </md-item>
+      </md-list>
+    </section>
+
+    <section>
+      <md-subheader>Awaiting delivery</md-subheader>
+      <md-list layout="column">
+        <md-item ng-repeat="message in vm.messages">
+          <md-divider></md-divider>
+          <md-item-content>
+            <md-icon flex="10" md-svg-icon="user"></md-icon>
+            <div class="md-tile-content">
+              <h3>{{message.subject}}</h3>
+              <h4>{{message.userName}}</h4>
+              <p>{{message.text}}</p>
+            </div>
+            <div class="md-tile-content">
+              <h4>{{message.date}}</h4>
+            </div>
+          </md-item-content>
+        </md-item>
+      </md-list>
+    </section>
+
+    <section>
+      <md-subheader class="md-accent">Delivered</md-subheader>
+      <md-list layout="column">
+        <md-item ng-repeat="message in vm.messages">
+          <md-divider></md-divider>
+          <md-item-content>
+            <md-icon flex="10" md-svg-icon="user"></md-icon>
+            <div class="md-tile-content">
+              <h3>{{message.subject}}</h3>
+              <h4>{{message.userName}}</h4>
+              <p>{{message.text}}</p>
+            </div>
+            <div class="md-tile-content">
+              <h4>{{message.date}}</h4>
+            </div>
+          </md-item-content>
+        </md-item>
+      </md-list>
+    </section>
+
+    <section>
+      <md-subheader class="md-warn">Problems reported</md-subheader>
+      <md-list layout="column">
+        <md-item ng-repeat="message in vm.messages">
+          <md-divider></md-divider>
+          <md-item-content>
+            <md-icon flex="10" md-svg-icon="user"></md-icon>
+            <div class="md-tile-content">
+              <h3>{{message.subject}}</h3>
+              <h4>{{message.userName}}</h4>
+              <p>{{message.text}}</p>
+            </div>
+            <div class="md-tile-content">
+              <h4>{{message.date}}</h4>
+            </div>
+          </md-item-content>
+        </md-item>
+      </md-list>
+    </section>
+  </md-content>
+</div>

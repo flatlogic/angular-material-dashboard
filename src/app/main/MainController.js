@@ -18,10 +18,10 @@
     vm.showSimpleToast = showSimpleToast;
 
     navService
-          .loadAllItems()
-          .then(function(menuItems) {
-            vm.menuItems = [].concat(menuItems);
-          });
+      .loadAllItems()
+      .then(function(menuItems) {
+        vm.menuItems = [].concat(menuItems);
+      });
 
     function toggleItemsList() {
       var pending = $mdBottomSheet.hide() || $q.when(true);
@@ -40,7 +40,7 @@
     function showActions($event) {
         $mdBottomSheet.show({
           parent: angular.element(document.getElementById('content')),
-          templateUrl: 'app/main/view/bottomSheet.html',
+          templateUrl: 'app/partials/bottomSheet.html',
           controller: [ '$mdBottomSheet', SheetController],
           controllerAs: "vm",
           bindToController : true,

@@ -1,7 +1,6 @@
 # Angular material admin dashboard
 
-This application based on [Angular Material](https://github.com/angular/material) 
-and built without any custom CSS.
+This application based on [Angular Material](https://github.com/angular/material).
 
 Check out [DEMO](http://micrum.github.io/angular-material-admin/site/)
 
@@ -30,7 +29,5 @@ Run development web-server:
     
 * Adjust grid-list on dashboard    
 * Page with table
-* Add widget directive with md-toolbar #2
-* Wrap dashboard components to widget
 * Adjust top toolbar select 
 * Organize CSS
