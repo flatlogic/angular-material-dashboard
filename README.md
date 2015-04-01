@@ -29,5 +29,4 @@ Run development web-server:
     
 * Adjust grid-list on dashboard    
 * Page with table
-* Adjust top toolbar select 
 * Organize CSS

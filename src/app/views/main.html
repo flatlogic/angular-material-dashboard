@@ -28,14 +28,13 @@
 
     <h2 class="md-toolbar-tools">{{vm.title}}</h2>
 
-    <md-select flex='10' placeholder="Admin" ng-model="admin">
+    <md-select layout-fill layout="row" flex='10' placeholder="Admin" ng-model="admin">
       <md-option ui-sref="home.profile" value="1">Profile</md-option>
       <md-option ng-click="vm.showActions($event)" value="2">Actions</md-option>
     </md-select>
 
     <!-- TODO: replace md-icon to ng-src and fix images paths in build -->
     <md-icon flex="10" md-svg-icon="user"></md-icon>
-
   </md-toolbar>
 
   <md-content flex class="md-padding">
