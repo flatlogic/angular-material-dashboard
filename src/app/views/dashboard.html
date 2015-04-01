@@ -39,8 +39,11 @@
 </md-grid-list>
 
 <div layout="row">
-  <panel-widget flex="50" title="Information panel" template="app/views/partials/infoPanel.html"></panel-widget>
-  <panel-widget flex title="Autocomplete input" template="app/views/partials/autocomplete.html"></panel-widget>
+  <panel-widget flex="50" title="Information Panel" template="app/views/partials/infoPanel.html"></panel-widget>
+  <panel-widget flex title="Autocomplete Input" template="app/views/partials/autocomplete.html"></panel-widget>
 </div>
 
-<panel-widget title="Messages" template="app/views/partials/messages.html"></panel-widget>
+<div layout="row">
+  <panel-widget flex="60" title="Messages" template="app/views/partials/messages.html"></panel-widget>
+  <panel-widget flex title="Application Performance" template="app/views/partials/progress.html"></panel-widget>
+</div>

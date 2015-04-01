@@ -53,6 +53,9 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
     $mdThemingProvider.theme('grey', 'default')
       .primaryPalette('grey');
 
+    $mdThemingProvider.theme('red', 'default')
+      .primaryPalette('red');
+
     $mdIconProvider
       .defaultIconSet('assets/images/icons.svg', 128)
       .icon('menu', 'assets/images/menu.svg', 24)

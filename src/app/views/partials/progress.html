@@ -1,0 +1,11 @@
+<md-content ng-controller="ProgressController as vm" class="md-padding">
+
+  <div layout-margin ng-repeat="data in vm.progressData">
+    <div layout="row">
+      <span>{{data.title}}</span>
+      <span flex></span>
+      <span>{{data.value}}%</span>
+    </div>
+    <md-progress-linear md-theme={{data.theme}} md-mode="determinate" value={{data.value}}></md-progress-linear>
+  </div>
+</md-content>

@@ -10,7 +10,7 @@
   function MessagesController(messagesService) {
     var vm = this;
 
-    vm.messages = [ ];
+    vm.messages = [];
 
     messagesService
       .loadAllItems()
