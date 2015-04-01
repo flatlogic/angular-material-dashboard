@@ -45,5 +45,8 @@
 
 <div layout="row">
   <panel-widget flex="60" title="Messages" template="app/views/partials/messages.html"></panel-widget>
-  <panel-widget flex title="Application Performance" template="app/views/partials/progress.html"></panel-widget>
+  <div layout="column">
+    <panel-widget title="Application Performance" template="app/views/partials/progress.html"></panel-widget>
+    <panel-widget flex title="TODO list" template="app/views/partials/checkboxes.html"></panel-widget>
+  </div>
 </div>

@@ -1,0 +1,19 @@
+<md-content class="todolist-content md-padding" ng-controller="TodoController as vm">
+  <md-subheader class="md-primary">
+    <span>{{vm.remaining()}} of {{vm.todos.length}} remaining</span>
+
+  </md-subheader>
+
+  <md-checkbox ng-repeat="todo in vm.todos" ng-model="todo.done">
+    {{todo.text}}
+  </md-checkbox>
+
+  <form ng-submit="vm.addTodo($event)">
+    <md-input-container>
+      <label>Add new todo</label>
+      <input ng-model="vm.todoText">
+    </md-input-container>
+    <md-button class="md-raised md-primary">Add new</md-button>
+    <md-button class="md-warn" ng-click="vm.archive($event)">Remove completed</md-button>
+  </form>
+</md-content>

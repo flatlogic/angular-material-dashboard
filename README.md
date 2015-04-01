@@ -29,4 +29,3 @@ Run development web-server:
     
 * Page with table
 * Organize CSS
-* Add widgets: todo-list, progress 

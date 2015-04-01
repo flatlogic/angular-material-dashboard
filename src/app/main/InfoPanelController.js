@@ -11,23 +11,17 @@
     var vm = this;
 
     vm.buttonEnabled = false;
-    vm.reloadStaging = false;
-    vm.reloadProduction = false;
-    vm.checkButton = checkButton;
+    vm.reloadServer = 'Staging';
     vm.showAlert = showAlert;
     vm.startValue = 0;
     vm.bufferValue = 1;
-
-    function checkButton() {
-      vm.buttonEnabled = vm.reloadStaging || vm.reloadProduction;
-    }
 
     function showAlert() {
       vm.startValue = 100;
       vm.bufferValue = 100;
       alert = $mdDialog.alert({
         title: 'Reloading done!',
-        content: "Servers reloaded." + " Staging: " + vm.reloadStaging + ", Production: " +vm.reloadProduction,
+        content: vm.reloadServer + " server reloaded.",
         ok: 'Close'
       });
       setTimeout(function(){

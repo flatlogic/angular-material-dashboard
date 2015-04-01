@@ -3,15 +3,12 @@
   <md-progress-linear class="md-warn" md-mode="buffer" value="{{vm.startValue}}"
                       md-buffer-value="{{vm.bufferValue}}"></md-progress-linear>
 
-  <md-checkbox aria-label="Checkbox 1" ng-change="vm.checkButton()" ng-model="vm.reloadStaging">
-    Staging server
-  </md-checkbox>
+  <md-radio-group ng-model="vm.reloadServer">
+    <md-radio-button value="Staging">Staging server</md-radio-button>
+    <md-radio-button value="Production">Production server</md-radio-button>
+  </md-radio-group>
 
-  <md-checkbox aria-label="Checkbox 2" ng-change="vm.checkButton()" ng-model="vm.reloadProduction">
-    Production server
-  </md-checkbox>
-
-  <md-button class="md-raised md-primary" ng-disabled="!vm.buttonEnabled" ng-click="vm.showAlert()">
-    Reload servers
+  <md-button class="md-raised md-warn" ng-click="vm.showAlert()">
+    Reload server
   </md-button>
 </md-content>
