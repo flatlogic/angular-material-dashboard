@@ -2,11 +2,31 @@ md-icon {
   height: auto;
 }
 
-// dashboard messages
+// DASHBOARD MESSAGES
 .messages {
   position: relative;
 
   &-content {
     height: 600px;
   }
+}
+
+// COLORS
+$blue: #2af5ff;
+$orange: #ffdb2b;
+$green: #269f19;
+
+.blue {
+  background-color: $blue;
+  color: white;
+}
+
+.orange {
+  background-color: $orange;
+  color: white;
+}
+
+.green {
+  background-color: $green;
+  color: white;
 }

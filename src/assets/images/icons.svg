@@ -2,7 +2,7 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-    <svg version="1.1" id="svg-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" id="dashboard" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="446.25px" height="446.25px" viewBox="0 0 446.25 446.25" style="enable-background:new 0 0 446.25 446.25;"
        xml:space="preserve">
       <g id="dashboard">
@@ -11,7 +11,7 @@
       </g>
     </svg>
 
-    <svg version="1.1" id="svg-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" id="profile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        width="408px" height="408px" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;" xml:space="preserve">
       <g id="person">
         <path d="M204,204c56.1,0,102-45.9,102-102S260.1,0,204,0c-56.1,0-102,45.9-102,102S147.9,204,204,204z M204,255
@@ -19,17 +19,21 @@
       </g>
     </svg>
 
-    <svg version="1.1" id="svg-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
-      <g id="messenger">
-        <path d="M459,0H51C22.95,0,0,22.95,0,51v459l102-102h357c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z"/>
+    <?xml version="1.0" encoding="iso-8859-1"?>
+    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="table" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="459px" height="459px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
+      <g id="list">
+        <path d="M0,255h51v-51H0V255z M0,357h51v-51H0V357z M0,153h51v-51H0V153z M102,255h357v-51H102V255z M102,357h357v-51H102V357z
+           M102,102v51h357v-51H102z"/>
       </g>
     </svg>
 
     <?xml version="1.0" encoding="iso-8859-1"?>
     <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg version="1.1" id="svg-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    <svg version="1.1" id="www" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     	 width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
     	<g id="language">
     		<path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M430.95,153H357
@@ -48,30 +52,28 @@
     <?xml version="1.0" encoding="iso-8859-1"?>
     <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg version="1.1" id="svg-7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
-    	<g id="error">
-    		<path d="M255,0C114.75,0,0,114.75,0,255s114.75,255,255,255s255-114.75,255-255S395.25,0,255,0z M280.5,382.5h-51v-51h51V382.5z
-    			 M280.5,280.5h-51v-153h51V280.5z"/>
-    	</g>
+    <svg version="1.1" id="notifications" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="535.5px" height="535.5px" viewBox="0 0 535.5 535.5" style="enable-background:new 0 0 535.5 535.5;" xml:space="preserve">
+      <g id="notifications-on">
+        <path d="M142.8,53.55l-35.7-35.7C45.9,63.75,5.1,135.15,0,216.75h51C56.1,147.9,89.25,89.25,142.8,53.55z M484.5,216.75h51
+          c-5.1-81.6-43.35-153-104.55-198.9l-35.7,35.7C446.25,89.25,479.4,147.9,484.5,216.75z M433.5,229.5
+          c0-79.05-53.55-142.8-127.5-160.65V51c0-20.4-17.85-38.25-38.25-38.25c-20.4,0-38.25,17.85-38.25,38.25v17.85
+          C155.55,86.7,102,150.45,102,229.5v140.25l-51,51v25.5h433.5v-25.5l-51-51V229.5z M267.75,522.75c2.55,0,7.65,0,10.2,0
+          c17.85-2.55,30.6-15.3,35.7-30.6c2.55-5.101,5.1-12.75,5.1-20.4h-102C216.75,499.8,239.7,522.75,267.75,522.75z"/>
+      </g>
     </svg>
+
 
     <?xml version="1.0" encoding="iso-8859-1"?>
     <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-    <svg version="1.1" id="svg-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    	 width="466.227px" height="466.227px" viewBox="0 0 466.227 466.227" style="enable-background:new 0 0 466.227 466.227;"
-    	 xml:space="preserve">
-    	<path d="M463.36,2.852c-1.906-1.805-4.188-2.712-6.854-2.712c-49.677,0-90.694,6.755-123.051,20.271
-    		c-32.353,13.518-66.424,38.072-102.208,73.662c-15.225,15.418-31.977,33.977-50.248,55.675l-108.205,5.708
-    		c-3.046,0.387-5.52,1.906-7.423,4.57L1.418,269.666c-2.285,3.806-1.807,7.519,1.427,11.136l18.271,18.271
-    		c1.714,1.714,3.901,2.569,6.567,2.569c1.143,0,1.997-0.096,2.568-0.287l78.802-24.273l80.228,80.232l-24.269,78.795
-    		c-0.949,3.43-0.188,6.472,2.285,9.138l18.272,18.274c2.094,1.707,4.285,2.566,6.567,2.566c1.716,0,3.238-0.384,4.569-1.144
-    		l109.639-63.953c2.666-1.902,4.186-4.373,4.568-7.419l5.708-108.209c21.7-18.274,40.262-35.022,55.676-50.251
-    		c33.89-34.074,58.009-68.378,72.375-102.923c14.373-34.547,21.556-75.519,21.556-122.91C466.224,6.804,465.273,4.664,463.36,2.852z
-    		 M394.277,110.92c-5.325,5.326-11.8,7.994-19.414,7.994s-14.082-2.665-19.414-7.994c-5.325-5.33-7.994-11.802-7.994-19.417
-    		c0-7.611,2.666-14.084,7.994-19.414c5.328-5.327,11.8-7.993,19.414-7.993s14.086,2.663,19.414,7.993s7.994,11.803,7.994,19.414
-    		C402.271,99.119,399.612,105.586,394.277,110.92z"/>
+    <svg version="1.1" id="memory" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="459px" height="459px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
+      <g id="memory">
+        <path d="M306,153H153v153h153V153z M255,255h-51v-51h51V255z M459,204v-51h-51v-51c0-28.05-22.95-51-51-51h-51V0h-51v51h-51V0h-51
+          v51h-51c-28.05,0-51,22.95-51,51v51H0v51h51v51H0v51h51v51c0,28.05,22.95,51,51,51h51v51h51v-51h51v51h51v-51h51
+          c28.05,0,51-22.95,51-51v-51h51v-51h-51v-51H459z M357,357H102V102h255V357z"/>
+      </g>
     </svg>
 
 

@@ -27,6 +27,6 @@ Run development web-server:
     
 ## TODO
     
-* Adjust grid-list on dashboard    
 * Page with table
 * Organize CSS
+* Add widgets: todo-list, progress 

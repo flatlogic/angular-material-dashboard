@@ -11,17 +11,17 @@
     var menuItems = [
       {
         name: 'Dashboard',
-        icon: 'svg-1',
+        icon: 'dashboard',
         sref: '.dashboard'
       },
       {
         name: 'Profile',
-        icon: 'svg-2',
+        icon: 'profile',
         sref: '.profile'
       },
       {
         name: 'Table',
-        icon: 'svg-4',
+        icon: 'table',
         sref: '.table'
       }
     ];
