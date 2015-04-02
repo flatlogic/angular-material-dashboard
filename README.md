@@ -24,8 +24,3 @@ Run development web-server:
 * Merge *master* to *gh-pages*
 * run `gulp build`
 * Push *gh-pages* branch to remote origin  
-    
-## TODO
-    
-* Page with table
-* Organize CSS
