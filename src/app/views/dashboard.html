@@ -1,6 +1,6 @@
 <!-- TODO: use heading classes after update material to 0.9.0 -->
 <!-- TODO: add tile directive -->
-<md-grid-list layout-margin flex md-cols="3" md-row-height="2:1" md-gutter="12px">
+<md-grid-list layout-margin flex md-cols="1" md-cols-gt-md="3" md-row-height="2:1" md-gutter="12px">
   <md-grid-tile class="md-whiteframe-z1 blue">
     <div layout-fill layout="row" layout-align="center" class="md-tile-content">
       <h2>Over 9000</h2>
@@ -38,13 +38,13 @@
   </md-grid-tile>
 </md-grid-list>
 
-<div layout="row">
-  <panel-widget flex="50" title="Information Panel" template="app/views/partials/infoPanel.html"></panel-widget>
+<div layout-gt-md="row">
+  <panel-widget flex-gt-md="50" title="Information Panel" template="app/views/partials/infoPanel.html"></panel-widget>
   <panel-widget flex title="Autocomplete Input" template="app/views/partials/autocomplete.html"></panel-widget>
 </div>
 
-<div layout="row">
-  <panel-widget flex="60" title="Messages" template="app/views/partials/messages.html"></panel-widget>
+<div layout-gt-md="row">
+  <panel-widget flex-gt-md="60" title="Messages" template="app/views/partials/messages.html"></panel-widget>
   <div layout="column">
     <panel-widget title="Application Performance" template="app/views/partials/progress.html"></panel-widget>
     <panel-widget flex title="TODO list" template="app/views/partials/checkboxes.html"></panel-widget>

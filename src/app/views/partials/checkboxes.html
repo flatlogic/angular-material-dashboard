@@ -1,8 +1,5 @@
 <md-content class="todolist-content md-padding" ng-controller="TodoController as vm">
-  <md-subheader class="md-primary">
-    <span>{{vm.remaining()}} of {{vm.todos.length}} remaining</span>
-
-  </md-subheader>
+  <h3>{{vm.remaining()}} of {{vm.todos.length}} remaining</h3>
 
   <md-checkbox ng-repeat="todo in vm.todos" ng-model="todo.done">
     {{todo.text}}

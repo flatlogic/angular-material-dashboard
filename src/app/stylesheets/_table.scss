@@ -24,8 +24,6 @@ $table-border-color:            #e0e0e0;
 
 
 //TABLES
-
-// Baseline styles
 .table {
   border-spacing: 0;
   width: 100%;
@@ -153,6 +151,7 @@ $table-border-color:            #e0e0e0;
             font-size: inherit;
             font-weight: $table-header-font-weight;
             color: $table-header-font-color;
+            padding-right: 10px;
           }
         }
       }
