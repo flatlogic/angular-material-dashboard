@@ -62,19 +62,20 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       .icon('user', 'assets/images/user.svg', 64);
   })
 
+
   .directive('panelWidget', function() {
     return {
       restrict: 'E',
       replace: true,
       transclude: true,
-      scope: { title: '@', template: '@' },
+      scope: { title: '@', template: '@', options: '@' },
       template: '' +
       '<section layout-margin class="md-whiteframe-z1">' +
       '  <md-toolbar md-theme="grey" class="md-hue-1">' +
       '    <div class="md-toolbar-tools">' +
       '     <h3>{{title}}</h3>' +
       '     <span flex></span>' +
-      '     <md-button>Options</md-button>' +
+      '     <md-button ng-show="options" ng-click="$showOptions = !$showOptions">Options</md-button>' +
       '    </div>' +
       '  </md-toolbar>' +
       '  <div ng-include="template"/>' +

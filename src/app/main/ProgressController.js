@@ -3,19 +3,31 @@
   angular
     .module('admin')
     .controller('ProgressController', [
-      'progressService',
+      'progressService','$q',
       ProgressController
     ]);
 
-  function ProgressController(progressService) {
+  function ProgressController(progressService, $q) {
     var vm = this;
 
-    vm.progressData = [];
+    vm.progressData = {};
+    vm.progressPeriod = 'week';
+    vm.changePeriod = changePeriod;
 
-    progressService
-      .loadAllItems()
-      .then(function(progressData) {
-        vm.progressData = [].concat(progressData);
-      });
+    activate();
+
+    function activate() {
+      var queries = [loadData()];
+      $q.all(queries);
+    }
+
+
+    function loadData() {
+      vm.progressData = progressService.getProgressData(vm.progressPeriod);
+    }
+
+    function changePeriod() {
+      loadData();
+    }
   }
 })();

@@ -6,6 +6,18 @@ md-icon {
  height: 350px;
 }
 
+
+// panel-widget options animation
+.options {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.options.ng-hide {
+  opacity:0;
+}
+
+
 // DASHBOARD MESSAGES
 .messages {
   position: relative;
@@ -15,22 +27,23 @@ md-icon {
   }
 }
 
-// COLORS
-$blue: #2af5ff;
-$orange: #ffdb2b;
-$green: #269f19;
 
-.blue {
-  background-color: $blue;
-  color: white;
-}
+  // COLORS
+  $blue: #2af5ff;
+  $orange: #ffdb2b;
+  $green: #269f19;
 
-.orange {
-  background-color: $orange;
-  color: white;
-}
+  .blue {
+    background-color: $blue;
+    color: white;
+  }
 
-.green {
-  background-color: $green;
-  color: white;
+  .orange {
+    background-color: $orange;
+    color: white;
+  }
+
+  .green {
+    background-color: $green;
+    color: white;
 }
