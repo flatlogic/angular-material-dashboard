@@ -73,9 +73,11 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       '<section layout-margin class="md-whiteframe-z1">' +
       '  <md-toolbar md-theme="grey" class="md-hue-1">' +
       '    <div class="md-toolbar-tools">' +
-      '     <h3>{{title}}</h3>' +
-      '     <span flex></span>' +
-      '     <md-button ng-show="options" ng-click="$showOptions = !$showOptions">Options</md-button>' +
+      '      <h3>{{title}}</h3>' +
+      '      <span flex></span>' +
+      '      <md-button ng-show="options" ng-click="$showOptions = !$showOptions" class="md-icon-button" aria-label="Show options">' +
+      '        <md-icon md-svg-icon="show"></md-icon>' +
+      '      </md-button>' +
       '    </div>' +
       '  </md-toolbar>' +
       '  <div ng-include="template"/>' +
