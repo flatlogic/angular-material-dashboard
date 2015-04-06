@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('admin')
+  angular.module('app')
           .service('navService', [
           '$q',
           navService

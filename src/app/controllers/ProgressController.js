@@ -1,7 +1,7 @@
 (function(){
 
   angular
-    .module('admin')
+    .module('app')
     .controller('ProgressController', [
       'progressService','$q',
       ProgressController
