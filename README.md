@@ -2,13 +2,13 @@
 
 This application based on [Angular Material](https://github.com/angular/material).
 
-Check out [DEMO](http://micrum.github.io/angular-material-admin/site/)
+Check out [DEMO](http://flatlogic.github.io/angular-material-admin/site/)
 
 ## Getting started
 
 Clone project:
 
-    $ https://github.com/micrum/angular-material-admin.git
+    $ https://github.com/flatlogic/angular-material-admin.git
 
 Install dependencies:
 
