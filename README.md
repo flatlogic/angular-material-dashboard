@@ -13,7 +13,6 @@ Clone project:
 Install dependencies:
 
     $ npm install
-    $ bower install
     
 Run development web-server:
 
@@ -23,4 +22,4 @@ Run development web-server:
   
 * Merge *master* to *gh-pages*
 * run `gulp build`
-* Push *gh-pages* branch to remote origin  
+* Push *gh-pages* branch to remote origin
