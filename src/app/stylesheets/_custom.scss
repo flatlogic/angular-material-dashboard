@@ -1,6 +1,23 @@
-md-icon {
-  height: auto;
+// COLORS
+$blue: #2af5ff;
+$orange: #ffdb2b;
+$green: #269f19;
+
+.blue {
+  background-color: $blue;
+  color: white;
 }
+
+.orange {
+  background-color: $orange;
+  color: white;
+}
+
+.green {
+  background-color: $green;
+  color: white;
+}
+
 
 .todolist-content {
  height: 350px;
@@ -28,22 +45,11 @@ md-icon {
 }
 
 
-  // COLORS
-  $blue: #2af5ff;
-  $orange: #ffdb2b;
-  $green: #269f19;
+// ANGULAR MATERIAL OVERRIDES
+md-radio-group {
+  border: none;
+}
 
-  .blue {
-    background-color: $blue;
-    color: white;
-  }
-
-  .orange {
-    background-color: $orange;
-    color: white;
-  }
-
-  .green {
-    background-color: $green;
-    color: white;
+md-icon {
+  height: auto;
 }

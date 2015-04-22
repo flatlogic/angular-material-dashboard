@@ -53,10 +53,9 @@
           var vm = this;
 
           vm.actions = [
-            { name: 'Action1'   },
-            { name: 'Action2' },
-            { name: 'Action3' },
-            { name: 'Action4' }
+            { name: 'Share', icon: 'share' },
+            { name: 'Download', icon: 'download' },
+            { name: 'Settings', icon: 'settings' }
           ];
 
           vm.performAction = function(action) {
