@@ -1,6 +1,6 @@
 {
   "name": "angular-material-admin",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "dependencies": {},
   "devDependencies": {
     "gulp": "~3.8.10",
