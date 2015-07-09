@@ -24,6 +24,10 @@ $green: #269f19;
 }
 
 
+// VARIABLES
+$left-sidenav-width: 150px;
+
+
 // panel-widget options animation
 .options {
   -webkit-transition:all linear 0.5s;
@@ -40,7 +44,7 @@ $green: #269f19;
   position: relative;
 
   &-content {
-    height: 600px;
+    height: 500px;
   }
 }
 
@@ -52,4 +56,10 @@ md-radio-group {
 
 md-icon {
   height: auto;
+}
+
+md-sidenav.md-locked-open.md-sidenav-left {
+  width: $left-sidenav-width;
+  min-width: $left-sidenav-width;
+  max-width: $left-sidenav-width;
 }

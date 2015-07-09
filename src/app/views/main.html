@@ -1,17 +1,17 @@
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
             class="md-whiteframe-z2 md-sidenav-left">
   <md-toolbar class="md-accent">
-    <h1 class="md-toolbar-tools">Angular Material Dashboard</h1>
+    <h1 class="md-toolbar-tools">AMD</h1>
   </md-toolbar>
   <md-list>
     <md-item ng-repeat="item in vm.menuItems">
       <md-item-content layout="row">
-        <md-button layout="row" flex ng-click="vm.selectItem(item)"
+        <md-button layout="column" layout-align="center center" flex ng-click="vm.selectItem(item)"
                    ui-sref-active="md-accent" ui-sref="{{item.sref}}">
-          <div hide-sm hide-md flex="20" class="md-tile-content">
+          <div hide-sm hide-md class="md-tile-content">
             <md-icon md-svg-icon="{{item.icon}}"></md-icon>
           </div>
-          <div layout="row" class="md-tile-content">
+          <div class="md-tile-content">
             {{item.name}}
           </div>
         </md-button>
@@ -38,17 +38,24 @@
     </md-button>
 
     <h2 class="md-toolbar-tools">{{vm.title}}</h2>
-
-    <md-select hide-sm hide-md layout-fill flex="10" layout="row" placeholder="Admin" ng-model="admin">
-      <md-option ui-sref="home.profile" value="1">Profile</md-option>
-      <md-option ng-click="vm.showActions($event)" value="2">Actions</md-option>
-    </md-select>
-
-    <!-- TODO: replace md-icon to ng-src and fix images paths in build -->
-    <md-icon hide-sm hide-md flex="10" md-svg-icon="user"></md-icon>
   </md-toolbar>
 
   <md-content flex class="md-padding">
     <div ui-view></div>
   </md-content>
 </div>
+
+<md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="right"
+            class="md-whiteframe-z2 md-sidenav-right">
+  <md-toolbar class="md-accent" layout="row">
+    <!-- TODO: replace md-icon to ng-src and fix images paths in build -->
+    <md-icon hide-sm hide-md md-svg-icon="user"></md-icon>
+
+    <md-select hide-sm hide-md placeholder="Admin" ng-model="admin">
+      <md-option ui-sref="home.profile" value="1">Profile</md-option>
+      <md-option ng-click="vm.showActions($event)" value="2">Actions</md-option>
+    </md-select>
+  </md-toolbar>
+
+  <panel-widget flex-gt-md="60" title="Messages" template="app/views/partials/messages.html"></panel-widget>
+</md-sidenav>
