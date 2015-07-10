@@ -1,13 +1,13 @@
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
             class="md-whiteframe-z2 md-sidenav-left">
-  <md-toolbar class="md-accent">
-    <h1 class="md-toolbar-tools">AMD</h1>
+  <md-toolbar md-theme="white">
+    <h1 class="md-toolbar-tools" layout="row" layout-align="center center">AMD</h1>
   </md-toolbar>
   <md-list>
     <md-item ng-repeat="item in vm.menuItems">
       <md-item-content layout="row">
         <md-button layout="column" layout-align="center center" flex ng-click="vm.selectItem(item)"
-                   ui-sref-active="md-accent" ui-sref="{{item.sref}}">
+                   ui-sref-active="md-accent" ui-sref="{{item.sref}}" class="sidenav-button">
           <div hide-sm hide-md class="md-tile-content">
             <md-icon md-svg-icon="{{item.icon}}"></md-icon>
           </div>
@@ -16,6 +16,7 @@
           </div>
         </md-button>
       </md-item-content>
+      <md-divider></md-divider>
     </md-item>
 
     <md-divider hide-gt-md></md-divider>
@@ -36,8 +37,6 @@
     <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Show Menu">
       <md-icon md-svg-icon="menu"></md-icon>
     </md-button>
-
-    <h2 class="md-toolbar-tools">{{vm.title}}</h2>
   </md-toolbar>
 
   <md-content flex class="md-padding">
@@ -57,5 +56,12 @@
     </md-select>
   </md-toolbar>
 
-  <panel-widget flex-gt-md="60" title="Messages" template="app/views/partials/messages.html"></panel-widget>
+  <section>
+    <md-toolbar md-theme="grey" class="md-hue-1">
+        <div class="md-toolbar-tools">
+            <h3>Messages</h3>
+        </div>
+    </md-toolbar>
+    <div ng-include src="'app/views/partials/messages.html'"/>
+  </section>
 </md-sidenav>

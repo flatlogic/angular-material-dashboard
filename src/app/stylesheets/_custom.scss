@@ -2,6 +2,8 @@
 $blue: #2af5ff;
 $orange: #ffdb2b;
 $green: #269f19;
+$main-bg: #ECECEC;
+$text-color: #7A7A7A;
 
 .blue {
   background-color: $blue;
@@ -25,10 +27,14 @@ $green: #269f19;
 
 
 // VARIABLES
-$left-sidenav-width: 150px;
+$left-sidenav-width: 120px;
 
 
-// panel-widget options animation
+// PANEL-WIDGET
+.panel-widget {
+  box-shadow: none;
+}
+
 .options {
   -webkit-transition:all linear 0.5s;
   transition:all linear 0.5s;
@@ -62,4 +68,14 @@ md-sidenav.md-locked-open.md-sidenav-left {
   width: $left-sidenav-width;
   min-width: $left-sidenav-width;
   max-width: $left-sidenav-width;
+}
+
+
+// LAYOUT
+body {
+  color: $text-color;
+}
+
+.sidenav-button {
+  text-transform: none;
 }

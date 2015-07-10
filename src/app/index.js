@@ -43,8 +43,10 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
 
     $mdThemingProvider
       .theme('default')
-        .primaryPalette('teal')
-        .accentPalette('orange');
+        .primaryPalette('grey', {
+          'default': '600'
+        })
+        .accentPalette('defaultPrimary');
 
     $mdThemingProvider.theme('dark', 'default')
       .primaryPalette('orange')
@@ -55,6 +57,28 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
 
     $mdThemingProvider.theme('red', 'default')
       .primaryPalette('red');
+
+    $mdThemingProvider.definePalette('defaultPrimary', {
+      '50':  '#E75753',
+      '100': '#E75753',
+      '200': '#E75753',
+      '300': '#E75753',
+      '400': '#E75753',
+      '500': '#E75753',
+      '600': '#E75753',
+      '700': '#E75753',
+      '800': '#E75753',
+      '900': '#E75753',
+      'A100': '#E75753',
+      'A200': '#E75753',
+      'A400': '#E75753',
+      'A700': '#E75753',
+      'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
+                                          // on this palette should be dark or light
+      'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
+        '200', '300', '400', 'A100'],
+      'contrastLightColors': undefined    // could also specify this if default was 'dark'
+    });
 
     $mdIconProvider
       .defaultIconSet('assets/images/icons.svg', 128)
@@ -71,7 +95,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       scope: { title: '@', template: '@', options: '@' },
       template: '' +
       '<section layout-margin class="md-whiteframe-z1">' +
-      '  <md-toolbar md-theme="grey" class="md-hue-1">' +
+      '  <md-toolbar md-theme="white" class="panel-widget">' +
       '    <div class="md-toolbar-tools">' +
       '      <h3>{{title}}</h3>' +
       '      <span flex></span>' +
