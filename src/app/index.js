@@ -58,8 +58,13 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
     $mdThemingProvider.theme('red', 'default')
       .primaryPalette('red');
 
+    $mdThemingProvider.theme('custom', 'default')
+      .primaryPalette('defaultPrimary', {
+        'hue-1': '50'
+    });
+
     $mdThemingProvider.definePalette('defaultPrimary', {
-      '50':  '#E75753',
+      '50':  '#FFFFFF',
       '100': '#E75753',
       '200': '#E75753',
       '300': '#E75753',
@@ -72,12 +77,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       'A100': '#E75753',
       'A200': '#E75753',
       'A400': '#E75753',
-      'A700': '#E75753',
-      'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
-                                          // on this palette should be dark or light
-      'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
-        '200', '300', '400', 'A100'],
-      'contrastLightColors': undefined    // could also specify this if default was 'dark'
+      'A700': '#E75753'
     });
 
     $mdIconProvider

@@ -28,9 +28,7 @@ $accent-color: #E75753;
 
 
 // VARIABLES
-$left-sidenav-width: 120px;
-
-$font-weight-normal: 400;
+$left-sidenav-width: 110px;
 
 
 // PANEL-WIDGET
@@ -53,7 +51,7 @@ $font-weight-normal: 400;
   position: relative;
 
   &-content {
-    height: 500px;
+    height: 80vh;
   }
 }
 
@@ -79,17 +77,14 @@ body {
   color: $text-color;
 }
 
-.sidenav-button {
-  text-transform: none;
-}
-
-h1 {
-  color: $accent-color;
-  font-weight: $font-weight-normal;
-}
-
 
 // CHARTS
 .donut-chart-title{
   text-align: center;
+}
+
+
+// UTILS
+.capitalize {
+  text-transform: capitalize;
 }

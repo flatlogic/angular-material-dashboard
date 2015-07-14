@@ -1,37 +1,27 @@
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
             class="md-whiteframe-z2 md-sidenav-left">
-  <md-toolbar md-theme="white">
-    <md-button  layout="row" layout-align="center center" class="md-toolbar-tools" href="https://github.com/flatlogic/angular-material-dashboard">
+  <md-toolbar md-theme="custom" class="md-hue-1 md-whiteframe-z2">
+    <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-accent"
+               href="https://github.com/flatlogic/angular-material-dashboard">
       <h1>AMD</h1>
     </md-button>
   </md-toolbar>
-  <md-list>
-    <md-item ng-repeat="item in vm.menuItems">
-      <md-item-content layout="row">
-        <md-button layout="column" layout-align="center center" flex ng-click="vm.selectItem(item)"
-                   ui-sref-active="md-accent" ui-sref="{{item.sref}}" class="sidenav-button">
+      <md-button ng-repeat-start="item in vm.menuItems" layout="column" layout-align="center center"
+                 flex class="capitalize" ng-click="vm.selectItem(item)"
+                 ui-sref-active="md-accent" ui-sref="{{item.sref}}">
           <div hide-sm hide-md class="md-tile-content">
-            <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+              <md-icon md-svg-icon="{{item.icon}}"></md-icon>
           </div>
           <div class="md-tile-content">
-            {{item.name}}
+              {{item.name}}
           </div>
-        </md-button>
-      </md-item-content>
-      <md-divider></md-divider>
-    </md-item>
-
-    <md-divider hide-gt-md></md-divider>
-    <md-item hide-gt-md>
-      <md-item-content>
-        <md-button flex ng-click="vm.showActions($event)">
+      </md-button>
+      <md-divider ng-repeat-end></md-divider>
+      <md-button hide-gt-md flex ng-click="vm.showActions($event)">
           <div layout="row" class="md-tile-content">
             Actions
           </div>
-        </md-button>
-      </md-item-content>
-    </md-item>
-  </md-list>
+      </md-button>
 </md-sidenav>
 
 <div layout="column" flex>
@@ -51,11 +41,13 @@
   <md-toolbar class="md-accent" layout="row">
     <!-- TODO: replace md-icon to ng-src and fix images paths in build -->
     <md-icon hide-sm hide-md md-svg-icon="user"></md-icon>
-
-    <md-select hide-sm hide-md placeholder="Admin" ng-model="admin">
-      <md-option ui-sref="home.profile" value="1">Profile</md-option>
-      <md-option ng-click="vm.showActions($event)" value="2">Actions</md-option>
-    </md-select>
+    <md-menu hide-sm hide-md>
+      <md-button class="capitalize" ng-click="$mdOpenMenu()" aria-label="Open menu">Richard Feynman</md-button>
+      <md-menu-content>
+        <md-menu-item><md-button ui-sref="home.profile">Profile</md-button></md-menu-item>
+        <md-menu-item><md-button ng-click="vm.showActions($event)">Actions</md-button></md-menu-item>
+      </md-menu-content>
+    </md-menu>
   </md-toolbar>
 
   <section>
