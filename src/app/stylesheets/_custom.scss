@@ -4,6 +4,7 @@ $orange: #ffdb2b;
 $green: #269f19;
 $main-bg: #ECECEC;
 $text-color: #7A7A7A;
+$accent-color: #E75753;
 
 .blue {
   background-color: $blue;
@@ -28,6 +29,8 @@ $text-color: #7A7A7A;
 
 // VARIABLES
 $left-sidenav-width: 120px;
+
+$font-weight-normal: 400;
 
 
 // PANEL-WIDGET
@@ -78,4 +81,15 @@ body {
 
 .sidenav-button {
   text-transform: none;
+}
+
+h1 {
+  color: $accent-color;
+  font-weight: $font-weight-normal;
+}
+
+
+// CHARTS
+.donut-chart-title{
+  text-align: center;
 }

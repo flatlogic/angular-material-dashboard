@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
-  'ngSanitize', 'ui.router', 'ngMaterial', 'app'])
+  'ngSanitize', 'ui.router', 'ngMaterial', 'googlechart', 'app'])
 
   .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
                     $mdIconProvider) {
@@ -84,34 +84,4 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       .defaultIconSet('assets/images/icons.svg', 128)
       .icon('menu', 'assets/images/menu.svg', 24)
       .icon('user', 'assets/images/user.svg', 64);
-  })
-
-
-  .directive('panelWidget', function() {
-    return {
-      restrict: 'E',
-      replace: true,
-      transclude: true,
-      scope: { title: '@', template: '@', options: '@' },
-      template: '' +
-      '<section layout-margin class="md-whiteframe-z1">' +
-      '  <md-toolbar md-theme="white" class="panel-widget">' +
-      '    <div class="md-toolbar-tools">' +
-      '      <h3>{{title}}</h3>' +
-      '      <span flex></span>' +
-      '      <md-button ng-show="options" ng-click="$showOptions = !$showOptions" class="md-icon-button" aria-label="Show options">' +
-      '        <md-icon md-svg-icon="show"></md-icon>' +
-      '      </md-button>' +
-      '    </div>' +
-      '  </md-toolbar>' +
-      '  <div ng-include="template"/>' +
-      '</section>',
-      compile: function(element, attrs, linker) {
-        return function(scope, element) {
-          linker(scope, function(clone) {
-            element.append(clone);
-          });
-        };
-      }
-    };
   });

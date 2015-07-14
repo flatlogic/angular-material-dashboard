@@ -1,0 +1,10 @@
+<md-content ng-controller="UsageController as vm" class="md-padding" layout="row">
+  <div flex>
+    <div google-chart chart="vm.ramChart" style="height:150px;" />
+    <h4 class="donut-chart-title">RAM</h4>
+  </div>
+  <div flex>
+    <div google-chart chart="vm.storageChart" style="height:150px;" />
+    <h4 class="donut-chart-title">Storage</h4>
+  </div>
+</md-content>
