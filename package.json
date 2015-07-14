@@ -3,7 +3,7 @@
   "version": "0.2.6",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "~3.8.10",
+    "gulp": "~3.9.0",
     "gulp-autoprefixer": "~2.0.0",
     "gulp-angular-templatecache": "~1.4.2",
     "del": "~0.1.3",
