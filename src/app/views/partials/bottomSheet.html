@@ -1,13 +1,11 @@
 <md-bottom-sheet class="md-list md-has-header">
-  <md-subheader>
-    <h4>Select action</h4>
-  </md-subheader>
+  <md-subheader>Select action</md-subheader>
   <md-list>
-    <md-item ng-repeat="action in vm.actions">
-      <md-button class="md-primary" ng-click="vm.performAction(action)">
-        <md-icon class="md-default-theme" md-svg-src="{{action.icon}}"></md-icon>
-        <span>{{action.name}}</span>
-      </md-button>
-    </md-item>
+      <md-list-item ng-repeat="action in vm.actions">
+          <md-button class="md-list-item-content"  ng-click="vm.performAction(action)" ng-href="{{action.url}}" target="_blank">
+              <i class="material-icons">{{action.icon}}</i>
+              <span class="share-label">{{action.name}}</span>
+          </md-button>
+      </md-list-item>
   </md-list>
 </md-bottom-sheet>

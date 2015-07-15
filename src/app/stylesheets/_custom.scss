@@ -22,13 +22,56 @@ $accent-color: #E75753;
 }
 
 
+// VARIABLES
+$left-sidenav-width: 110px;
+
+
+// DASHBOARD
 .todolist-content {
  height: 350px;
 }
 
+.messages {
+  position: relative;
 
-// VARIABLES
-$left-sidenav-width: 110px;
+  &-content {
+    height: 80vh;
+  }
+}
+
+
+// LAYOUT
+body {
+  color: $text-color;
+}
+
+.toolbar-button {
+  min-width: 20px;
+}
+
+.img-circle {
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.notifications-label {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 12px;
+  top: 2px;
+  right: 2px;
+  background-color: $accent-color;
+}
+
+.share-label {
+  vert-align: middle;
+  margin-left: 10px;
+}
 
 
 // PANEL-WIDGET
@@ -43,16 +86,6 @@ $left-sidenav-width: 110px;
 
 .options.ng-hide {
   opacity:0;
-}
-
-
-// DASHBOARD MESSAGES
-.messages {
-  position: relative;
-
-  &-content {
-    height: 80vh;
-  }
 }
 
 
@@ -72,10 +105,15 @@ md-sidenav.md-locked-open.md-sidenav-left {
 }
 
 
-// LAYOUT
-body {
-  color: $text-color;
+// LIBS OVERRIDES
+.material-icons {
+  vertical-align: middle;
 }
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 
 // CHARTS

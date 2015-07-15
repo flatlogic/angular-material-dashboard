@@ -80,8 +80,5 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
       'A700': '#E75753'
     });
 
-    $mdIconProvider
-      .defaultIconSet('assets/images/icons.svg', 128)
-      .icon('menu', 'assets/images/menu.svg', 24)
-      .icon('user', 'assets/images/user.svg', 64);
+    $mdIconProvider.icon('user', 'assets/images/user.svg', 64);
   });

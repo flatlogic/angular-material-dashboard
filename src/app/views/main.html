@@ -10,7 +10,7 @@
                  flex class="capitalize" ng-click="vm.selectItem(item)"
                  ui-sref-active="md-accent" ui-sref="{{item.sref}}">
           <div hide-sm hide-md class="md-tile-content">
-              <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+              <i class="material-icons md-36">{{item.icon}}</i>
           </div>
           <div class="md-tile-content">
               {{item.name}}
@@ -25,37 +25,56 @@
 </md-sidenav>
 
 <div layout="column" flex>
-  <md-toolbar layout="row">
-    <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Show Menu">
-      <md-icon md-svg-icon="menu"></md-icon>
-    </md-button>
-  </md-toolbar>
+    <md-toolbar layout="row" layout-align="end center">
+        <md-button hide-sm class="toolbar-button" aria-label="Search">
+            <i class="material-icons">search</i>
+        </md-button>
+        <md-button hide-sm class="toolbar-button" aria-label="Notifications">
+            <i class="material-icons">notifications</i>
+            <span class="notifications-label">7</span>
+        </md-button>
+        <md-button hide-sm class="toolbar-button" aria-label="Settings">
+            <i class="material-icons">settings</i>
+        </md-button>
+        <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Menu">
+            <i class="material-icons">menu</i>
+        </md-button>
+    </md-toolbar>
 
-  <md-content flex class="md-padding">
-    <div ui-view></div>
-  </md-content>
+    <md-content flex class="md-padding">
+        <div ui-view></div>
+    </md-content>
 </div>
 
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="right"
             class="md-whiteframe-z2 md-sidenav-right">
-  <md-toolbar class="md-accent" layout="row">
-    <!-- TODO: replace md-icon to ng-src and fix images paths in build -->
-    <md-icon hide-sm hide-md md-svg-icon="user"></md-icon>
-    <md-menu hide-sm hide-md>
-      <md-button class="capitalize" ng-click="$mdOpenMenu()" aria-label="Open menu">Richard Feynman</md-button>
-      <md-menu-content>
-        <md-menu-item><md-button ui-sref="home.profile">Profile</md-button></md-menu-item>
-        <md-menu-item><md-button ng-click="vm.showActions($event)">Actions</md-button></md-menu-item>
-      </md-menu-content>
-    </md-menu>
-  </md-toolbar>
-
-  <section>
-    <md-toolbar md-theme="grey" class="md-hue-1">
-        <div class="md-toolbar-tools">
-            <h3>Messages</h3>
-        </div>
+    <md-toolbar layout="row" flex="80">
+        <md-toolbar class="md-accent" layout="row" layout-align="center center">
+            <img class="img-circle" ng-src="assets/images/feynman.jpg">
+            <md-menu>
+                <md-button class="capitalize" ng-click="$mdOpenMenu()" aria-label="Open menu">
+                    <span>Richard Feynman</span>
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </md-button>
+                <md-menu-content>
+                    <md-menu-item><md-button ng-click="$mdCloseMenu()" ui-sref="home.profile">Profile</md-button></md-menu-item>
+                    <md-menu-item><md-button ng-click="$mdCloseMenu()" ui-sref="home.dashboard">Log out</md-button></md-menu-item>
+                </md-menu-content>
+            </md-menu>
+        </md-toolbar>
+        <md-toolbar flex="20" layout="row" layout-align="center center">
+            <md-button ng-click="vm.showActions($event)" class="toolbar-button">
+                <i class="material-icons">more_vert</i>
+            </md-button>
+        </md-toolbar>
     </md-toolbar>
-    <div ng-include src="'app/views/partials/messages.html'"/>
-  </section>
+
+    <section>
+        <md-toolbar md-theme="grey" class="md-hue-1">
+            <div class="md-toolbar-tools">
+                <h3>Messages</h3>
+            </div>
+        </md-toolbar>
+        <div ng-include src="'app/views/partials/messages.html'"/>
+    </section>
 </md-sidenav>

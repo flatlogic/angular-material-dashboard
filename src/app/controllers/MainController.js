@@ -53,9 +53,8 @@
           var vm = this;
 
           vm.actions = [
-            { name: 'Share', icon: 'share' },
-            { name: 'Download', icon: 'download' },
-            { name: 'Settings', icon: 'settings' }
+            { name: 'Share', icon: 'share', url: 'https://twitter.com/intent/tweet?text=Angular%20Material%20Dashboard%20https://github.com/flatlogic/angular-material-dashboard%20via%20@flatlogicinc' },
+            { name: 'Star', icon: 'star', url: 'https://github.com/flatlogic/angular-material-dashboard/stargazers' }
           ];
 
           vm.performAction = function(action) {

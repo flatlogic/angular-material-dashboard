@@ -14,7 +14,7 @@ angular.module('app')
       '      <h3>{{title}}</h3>' +
       '      <span flex></span>' +
       '      <md-button ng-show="options" ng-click="$showOptions = !$showOptions" class="md-icon-button" aria-label="Show options">' +
-      '        <md-icon md-svg-icon="show"></md-icon>' +
+      '        <i class="material-icons">more_vert</i>' +
       '      </md-button>' +
       '    </div>' +
       '  </md-toolbar>' +

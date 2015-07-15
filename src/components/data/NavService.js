@@ -16,12 +16,12 @@
       },
       {
         name: 'Profile',
-        icon: 'profile',
+        icon: 'person',
         sref: '.profile'
       },
       {
         name: 'Table',
-        icon: 'table',
+        icon: 'view_module',
         sref: '.table'
       }
     ];
