@@ -1,7 +1,8 @@
 // COLORS
 $main-bg-color: #ECECEC;
 $text-color: #7A7A7A;
-$accent-color: #E75753;
+$accent-color: rgb(0, 150, 136);
+$warning-color: #E75753;
 
 
 // VARIABLES
@@ -25,6 +26,11 @@ body {
 
 .page-content {
   background-color: $main-bg-color;
+}
+
+.widget-progress {
+  width: 95% !important;
+  margin-left: 10px;
 }
 
 
@@ -59,7 +65,7 @@ body {
   font-size: 12px;
   top: 2px;
   right: 2px;
-  background-color: $accent-color;
+  background-color: $warning-color;
 }
 
 // panel-widget
@@ -108,6 +114,14 @@ md-sidenav.md-locked-open.md-sidenav-left {
   width: $left-sidenav-width;
   min-width: $left-sidenav-width;
   max-width: $left-sidenav-width;
+}
+
+a.md-button.md-warn.md-raised, a.md-button.md-warn.md-fab, .md-button.md-warn.md-raised, .md-button.md-warn.md-fab {
+  color: white;
+}
+
+md-radio-button.md-accent.md-checked .md-label span {
+  color: $accent-color;
 }
 
 // libs overrides

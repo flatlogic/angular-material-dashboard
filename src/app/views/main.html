@@ -1,14 +1,14 @@
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
             class="md-whiteframe-z2 md-sidenav-left">
   <md-toolbar md-theme="custom" class="md-hue-1 md-whiteframe-z2">
-    <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-accent"
+    <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-warn"
                href="https://github.com/flatlogic/angular-material-dashboard">
       <h1>AMD</h1>
     </md-button>
   </md-toolbar>
       <md-button ng-repeat-start="item in vm.menuItems" layout="column" layout-align="center center"
                  flex class="capitalize" ng-click="vm.selectItem(item)"
-                 ui-sref-active="md-accent" ui-sref="{{item.sref}}">
+                 ui-sref-active="md-warn" ui-sref="{{item.sref}}">
           <div hide-sm hide-md class="md-tile-content">
               <i class="material-icons md-36">{{item.icon}}</i>
           </div>
@@ -49,7 +49,7 @@
 <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="right"
             class="md-whiteframe-z2 md-sidenav-right">
     <md-toolbar layout="row" flex="80">
-        <md-toolbar class="md-accent" layout="row" layout-align="center center">
+        <md-toolbar class="md-warn" layout="row" layout-align="center center">
             <img class="img-circle" ng-src="assets/images/feynman.jpg">
             <md-menu>
                 <md-button class="capitalize" ng-click="$mdOpenMenu()" aria-label="Open menu">

@@ -14,7 +14,7 @@
       legend: 'none',
       tooltip : { isHtml: true },
       pieSliceText: 'none',
-      slices: { 0: { color: 'rgb(62, 164, 152)' },  1: { color: '#E75753' },  2: { color: 'rgb(235, 235, 235)' } }
+      slices: { 0: { color: 'rgb(0, 150, 136)' },  1: { color: '#E75753' },  2: { color: 'rgb(235, 235, 235)' } }
     };
     vm.ramChart = {
       type: 'PieChart',

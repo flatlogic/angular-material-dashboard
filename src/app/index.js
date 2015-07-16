@@ -46,7 +46,10 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
         .primaryPalette('grey', {
           'default': '600'
         })
-        .accentPalette('defaultPrimary');
+        .accentPalette('teal', {
+          'default': '500'
+        })
+        .warnPalette('defaultPrimary');
 
     $mdThemingProvider.theme('dark', 'default')
       .primaryPalette('orange')

@@ -1,16 +1,24 @@
 <md-content class="md-padding" ng-controller="TodoController as vm">
-  <h3>{{vm.remaining()}} of {{vm.todos.length}} remaining</h3>
+    <div layout="row">
+        <h4 flex="82">{{vm.remaining()}} of {{vm.todos.length}} remaining</h4>
+        <md-button class="md-primary" ng-click="vm.toggleAll()">Toggle All
+        </md-button>
+    </div>
 
-  <md-checkbox ng-repeat="todo in vm.todos" ng-model="todo.done">
-    {{todo.text}}
-  </md-checkbox>
+    <md-checkbox ng-repeat="todo in vm.todos" ng-model="todo.done">
+        {{todo.text}}
+    </md-checkbox>
 
-  <form ng-submit="vm.addTodo($event)">
-    <md-input-container>
-      <label>Add new todo</label>
-      <input ng-model="vm.todoText">
-    </md-input-container>
-    <md-button class="md-raised md-primary">Add new</md-button>
-    <md-button class="md-warn" ng-click="vm.archive($event)">Remove completed</md-button>
-  </form>
+    <form ng-submit="vm.addTodo($event)">
+        <md-input-container>
+            <label>Write some todo task here...</label>
+            <input ng-model="vm.todoText">
+        </md-input-container>
+        <md-button class="md-fab md-warn" aria-label="Eat cake">
+            <i class="material-icons">add</i>
+        </md-button>
+        <md-button class="md-primary" ng-click="vm.archive($event)">
+            Remove completed
+        </md-button>
+    </form>
 </md-content>
