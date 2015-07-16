@@ -8,8 +8,8 @@ angular.module('app')
       transclude: true,
       scope: { title: '@', template: '@', options: '@' },
       template: '' +
-      '<section layout-margin class="md-whiteframe-z1">' +
-      '  <md-toolbar md-theme="custom" class="md-hue-1 panel-widget">' +
+      '<section layout-margin class="md-whiteframe-z1 panel-widget">' +
+      '  <md-toolbar md-theme="custom" class="md-hue-1 panel-widget-toolbar">' +
       '    <div class="md-toolbar-tools">' +
       '      <h3>{{title}}</h3>' +
       '      <span flex></span>' +

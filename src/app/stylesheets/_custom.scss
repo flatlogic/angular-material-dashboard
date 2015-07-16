@@ -27,10 +27,6 @@ $left-sidenav-width: 110px;
 
 
 // DASHBOARD
-.todolist-content {
- height: 350px;
-}
-
 .messages {
   position: relative;
 
@@ -73,10 +69,22 @@ body {
   margin-left: 10px;
 }
 
+.page-content {
+  background-color: rgb(237, 237, 237);
+}
+
+.widget-content {
+  height: 300px;
+}
+
 
 // PANEL-WIDGET
 .panel-widget {
-  box-shadow: none;
+  background-color: white;
+
+  &-toolbar {
+    box-shadow: none;
+  }
 }
 
 .options {
