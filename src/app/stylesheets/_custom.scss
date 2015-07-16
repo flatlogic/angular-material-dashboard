@@ -1,39 +1,12 @@
 // COLORS
-$blue: #2af5ff;
-$orange: #ffdb2b;
-$green: #269f19;
-$main-bg: #ECECEC;
+$main-bg-color: #ECECEC;
 $text-color: #7A7A7A;
 $accent-color: #E75753;
-
-.blue {
-  background-color: $blue;
-  color: white;
-}
-
-.orange {
-  background-color: $orange;
-  color: white;
-}
-
-.green {
-  background-color: $green;
-  color: white;
-}
 
 
 // VARIABLES
 $left-sidenav-width: 110px;
-
-
-// DASHBOARD
-.messages {
-  position: relative;
-
-  &-content {
-    height: 80vh;
-  }
-}
+$widget-height: 310px;
 
 
 // LAYOUT
@@ -45,10 +18,35 @@ body {
   min-width: 20px;
 }
 
+.share-label {
+  vert-align: middle;
+  margin-left: 10px;
+}
+
+.page-content {
+  background-color: $main-bg-color;
+}
+
+
+// UTILS
+.capitalize {
+  text-transform: capitalize;
+}
+
 .img-circle {
   height: 50px;
   border-radius: 50%;
   margin: 0 10px;
+}
+
+
+// COMPONENTS
+.messages {
+  position: relative;
+
+  &-content {
+    height: 100vh;
+  }
 }
 
 .notifications-label {
@@ -64,26 +62,16 @@ body {
   background-color: $accent-color;
 }
 
-.share-label {
-  vert-align: middle;
-  margin-left: 10px;
-}
-
-.page-content {
-  background-color: rgb(237, 237, 237);
-}
-
-.widget-content {
-  height: 300px;
-}
-
-
-// PANEL-WIDGET
+// panel-widget
 .panel-widget {
   background-color: white;
 
   &-toolbar {
     box-shadow: none;
+  }
+
+  &-tittle {
+    color: $text-color;
   }
 }
 
@@ -96,8 +84,18 @@ body {
   opacity:0;
 }
 
+.fixed-height-widget {
+  height: $widget-height;
+}
 
-// ANGULAR MATERIAL OVERRIDES
+// charts
+.donut-chart-title{
+  text-align: center;
+}
+
+
+// OVERRIDES
+// angular material overrides
 md-radio-group {
   border: none;
 }
@@ -112,8 +110,7 @@ md-sidenav.md-locked-open.md-sidenav-left {
   max-width: $left-sidenav-width;
 }
 
-
-// LIBS OVERRIDES
+// libs overrides
 .material-icons {
   vertical-align: middle;
 }
@@ -122,15 +119,3 @@ md-sidenav.md-locked-open.md-sidenav-left {
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
-
-
-// CHARTS
-.donut-chart-title{
-  text-align: center;
-}
-
-
-// UTILS
-.capitalize {
-  text-transform: capitalize;
-}

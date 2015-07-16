@@ -1,4 +1,4 @@
-<md-content class="widget-content md-padding" ng-controller="TodoController as vm">
+<md-content class="md-padding" ng-controller="TodoController as vm">
   <h3>{{vm.remaining()}} of {{vm.todos.length}} remaining</h3>
 
   <md-checkbox ng-repeat="todo in vm.todos" ng-model="todo.done">
