@@ -2,20 +2,20 @@
   'use strict';
 
   angular.module('app')
-        .service('progressService', [
-      progressService
+        .service('performanceService', [
+      performanceService
   ]);
 
-  function progressService(){
+  function performanceService(){
 
     var service = {
-      getProgressData: getProgressData
+      getPerformanceData: getPerformanceData
     };
 
     return service;
 
-    function getProgressData(progressPeriod) {
-      if (progressPeriod === 'week') {
+    function getPerformanceData(performancePeriod) {
+      if (performancePeriod === 'week') {
         return [
           {
             title: 'Database',

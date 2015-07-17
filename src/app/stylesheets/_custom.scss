@@ -102,6 +102,8 @@ body {
 
 .custom-tooltip {
   font-size: 24px;
+  color: $text-color;
+  text-align: center;
 }
 
 
@@ -146,7 +148,6 @@ md-radio-button.md-accent.md-checked .md-label span {
 
 .nvtooltip {
   background-color: transparent;
-  color: $text-color;
   border: none;
   font-weight: $font-weight-bold;
 }

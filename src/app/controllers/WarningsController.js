@@ -9,7 +9,7 @@
         var vm = this;
 
         // TODO: move data to the service
-        vm.warningsChartData = warningFunction; //[ {x: 10, y: 5264}, { x: 20, y: 3872} ];
+        vm.warningsChartData = warningFunction;
 
         function warningFunction() {
             var sin = [];
@@ -23,7 +23,6 @@
             chart: {
                 type: 'lineChart',
                 height: 210,
-                donut: true,
                 margin: { left: -20, right: -20 },
                 x: function (d) { return d.x },
                 y: function (d) { return d.y },
