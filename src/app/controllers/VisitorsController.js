@@ -22,7 +22,8 @@
                 color: ['rgb(0, 150, 136)', '#E75753'],
                 showLabels: false,
                 showLegend: false,
-                title: 'Over 9K'
+                title: 'Over 9K',
+                margin: { top: -10 }
             }
         };
     }

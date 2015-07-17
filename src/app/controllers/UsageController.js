@@ -23,7 +23,8 @@
                 color: ['rgb(0, 150, 136)', '#E75753', 'rgb(235, 235, 235)'],
                 showLabels: false,
                 showLegend: false,
-                title: '83%'
+                title: '83%',
+                margin: { top: -10 }
             }
         };
     }
