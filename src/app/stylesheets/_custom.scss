@@ -132,6 +132,10 @@ md-radio-button.md-accent.md-checked .md-label span {
   color: $accent-color;
 }
 
+.md-toolbar-tools h1 {
+  font-size: $font-size-large;
+}
+
 // libs overrides
 .material-icons {
   vertical-align: middle;
