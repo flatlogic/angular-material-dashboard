@@ -23,7 +23,7 @@
             chart: {
                 type: 'lineChart',
                 height: 210,
-                margin: { left: -20, right: -20 },
+                margin: { top: -10, left: -20, right: -20 },
                 x: function (d) { return d.x },
                 y: function (d) { return d.y },
                 showLabels: false,

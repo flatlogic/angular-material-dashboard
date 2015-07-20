@@ -24,7 +24,7 @@
                 showLabels: false,
                 showLegend: false,
                 title: '83%',
-                margin: { top: -10 }
+                margin: { top: -10, left: -20, right: -20 }
             }
         };
     }

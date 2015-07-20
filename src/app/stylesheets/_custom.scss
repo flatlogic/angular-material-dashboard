@@ -9,6 +9,7 @@ $warning-color: #E75753;
 $left-sidenav-width: 110px;
 $widget-height: 310px;
 $font-weight-bold: 600;
+$font-size-large: 22px;
 
 
 // LAYOUT
@@ -101,7 +102,7 @@ body {
 }
 
 .custom-tooltip {
-  font-size: 24px;
+  font-size: $font-size-large;
   color: $text-color;
   text-align: center;
 }
@@ -144,6 +145,7 @@ md-radio-button.md-accent.md-checked .md-label span {
 .nvd3.nv-pie .nv-pie-title {
   fill: rgb(68, 68, 68);
   font-weight: $font-weight-bold;
+  font-size: $font-size-large !important;
 }
 
 .nvtooltip {
