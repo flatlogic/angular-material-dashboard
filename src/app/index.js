@@ -52,14 +52,11 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
         .warnPalette('defaultPrimary');
 
     $mdThemingProvider.theme('dark', 'default')
-      .primaryPalette('orange')
+      .primaryPalette('defaultPrimary')
       .dark();
 
     $mdThemingProvider.theme('grey', 'default')
       .primaryPalette('grey');
-
-    $mdThemingProvider.theme('red', 'default')
-      .primaryPalette('red');
 
     $mdThemingProvider.theme('custom', 'default')
       .primaryPalette('defaultPrimary', {
@@ -68,7 +65,7 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies', 'ngTouch',
 
     $mdThemingProvider.definePalette('defaultPrimary', {
       '50':  '#FFFFFF',
-      '100': '#E75753',
+      '100': 'rgb(255, 198, 197)',
       '200': '#E75753',
       '300': '#E75753',
       '400': '#E75753',

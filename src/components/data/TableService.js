@@ -13,49 +13,49 @@
         issue: 'Nested views',
         progress: 100,
         status: 'Done',
-        theme: ''
+        class: 'md-accent'
       },
       {
         issue: 'Table component',
         progress: 40,
         status: 'Feedback',
-        theme: 'dark'
+        class: ''
       },
       {
         issue: 'Dashboard tiles',
         progress: 100,
         status: 'Done',
-        theme: ''
+        class: 'md-accent'
       },
       {
         issue: 'Panel widget',
         progress: 84,
         status: 'In progress',
-        theme: 'grey'
+        class: 'orange'
       },
       {
         issue: 'Form',
         progress: 100,
         status: 'Done',
-        theme: ''
+        class: 'md-accent'
       },
       {
         issue: 'Custom CSS',
         progress: 20,
         status: 'Feedback',
-        theme: 'dark'
+        class: ''
       },
       {
         issue: 'Add backend',
         progress: 1,
         status: 'To do',
-        theme: 'red'
+        class: 'md-warn'
       },
       {
         issue: 'Layout with sidebar',
         progress: 100,
         status: 'Done',
-        theme: ''
+        class: 'md-accent'
       }
     ];
 

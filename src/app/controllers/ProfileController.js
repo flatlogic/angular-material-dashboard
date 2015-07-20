@@ -15,12 +15,12 @@
       firstName: '',
       lastName: '' ,
       company: 'FlatLogic Inc.' ,
-      address: 'Kulman street, 1' ,
+      address: 'Fabritsiusa str, 4' ,
       city: 'Minsk' ,
       state: '' ,
       biography: 'We are young and ambitious full service design and technology company. ' +
       'Our focus is JavaScript development and User Interface design.',
-      postalCode : '220013'
+      postalCode : '220007'
     };
   }
 
