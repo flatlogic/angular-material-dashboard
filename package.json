@@ -1,6 +1,6 @@
 {
   "name": "angular-material-admin",
-  "version": "0.2.6",
+  "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
     "gulp": "~3.9.0",
@@ -16,7 +16,7 @@
     "gulp-size": "~1.1.0",
     "gulp-uglify": "~1.0.1",
     "gulp-useref": "~1.0.2",
-    "gulp-ng-annotate": "~0.3.6",
+    "gulp-ng-annotate": "~1.0.2",
     "gulp-replace": "~0.5.0",
     "gulp-rename": "~1.2.0",
     "gulp-rev": "~2.0.1",
