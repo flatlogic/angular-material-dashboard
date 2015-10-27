@@ -16,6 +16,10 @@ Clone project:
 Install dependencies:
 
     $ npm install
+
+Install gem 'sass'
+
+    $ gem install sass
     
 Run development web-server:
 
