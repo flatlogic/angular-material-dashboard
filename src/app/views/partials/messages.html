@@ -1,70 +1,10 @@
-<!-- TODO: move section element to directive -->
 <div class="messages" ng-controller="MessagesController as vm">
     <md-content class="messages-content">
-        <section>
-            <md-subheader class="md-accent">New Orders</md-subheader>
-            <md-list>
-                <md-list-item class="md-3-line" ng-repeat="message in vm.messages">
-                    <img class="md-avatar" ng-src="assets/images/einstein.jpg">
-                    <div class="md-list-item-text">
-                        <h3>{{message.subject}}</h3>
-                        <h4>{{message.userName}}</h4>
-                        <p>{{message.text}}</p>
-                    </div>
-                </md-list-item>
-            </md-list>
-        </section>
 
-        <section>
-            <md-subheader class="md-primary">Awaiting delivery</md-subheader>
-            <md-list>
-                <md-list-item class="md-3-line"
-                              ng-repeat="message in vm.messages">
-                    <img class="md-avatar" ng-src="assets/images/einstein.jpg">
+        <messages-section title="New Orders" messages="vm.messages"></messages-section>
+        <messages-section title="Delivered" messages="vm.messages"></messages-section>
+        <messages-section title="Problems reported" messages="vm.messages"></messages-section>
 
-                    <div class="md-list-item-text">
-                        <h3>{{message.subject}}</h3>
-                        <h4>{{message.userName}}</h4>
-
-                        <p>{{message.text}}</p>
-                    </div>
-                </md-list-item>
-            </md-list>
-        </section>
-
-        <section>
-            <md-subheader class="md-accent">Delivered</md-subheader>
-            <md-list>
-                <md-list-item class="md-3-line"
-                              ng-repeat="message in vm.messages">
-                    <img class="md-avatar" ng-src="assets/images/einstein.jpg">
-
-                    <div class="md-list-item-text">
-                        <h3>{{message.subject}}</h3>
-                        <h4>{{message.userName}}</h4>
-
-                        <p>{{message.text}}</p>
-                    </div>
-                </md-list-item>
-            </md-list>
-        </section>
-
-        <section>
-            <md-subheader class="md-warn">Problems reported</md-subheader>
-            <md-list>
-                <md-list-item class="md-3-line"
-                              ng-repeat="message in vm.messages">
-                    <img class="md-avatar" ng-src="assets/images/einstein.jpg">
-
-                    <div class="md-list-item-text">
-                        <h3>{{message.subject}}</h3>
-                        <h4>{{message.userName}}</h4>
-
-                        <p>{{message.text}}</p>
-                    </div>
-                </md-list-item>
-            </md-list>
-        </section>
         <md-divider></md-divider>
     </md-content>
 </div>
