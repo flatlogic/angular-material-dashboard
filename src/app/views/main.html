@@ -33,8 +33,8 @@
             <i class="material-icons">notifications</i>
             <span class="notifications-label">7</span>
         </md-button>
-        <md-button hide-sm class="toolbar-button" aria-label="Settings">
-            <i class="material-icons">settings</i>
+        <md-button hide-sm class="toolbar-button" aria-label="Settings" ng-click="vm.toggleRightSidebar()">
+            <i class="material-icons">menu</i>
         </md-button>
         <md-button hide-gt-sm ng-click="vm.toggleItemsList()" aria-label="Menu">
             <i class="material-icons">menu</i>
@@ -46,7 +46,7 @@
     </md-content>
 </div>
 
-<md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="right"
+<md-sidenav md-component-id="right"
             class="md-whiteframe-z2 md-sidenav-right">
     <md-toolbar layout="row">
         <md-toolbar flex="80" class="md-warn" layout="row" layout-align="center center">

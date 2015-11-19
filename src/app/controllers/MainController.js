@@ -16,12 +16,17 @@
     vm.showActions = showActions;
     vm.title = $state.current.data.title;
     vm.showSimpleToast = showSimpleToast;
+    vm.toggleRightSidebar = toggleRightSidebar;
 
     navService
       .loadAllItems()
       .then(function(menuItems) {
         vm.menuItems = [].concat(menuItems);
       });
+
+    function toggleRightSidebar() {
+        $mdSidenav('right').toggle();
+    }
 
     function toggleItemsList() {
       var pending = $mdBottomSheet.hide() || $q.when(true);
@@ -68,7 +73,7 @@
         $mdToast.simple()
           .content(title)
           .hideDelay(2000)
-          .position('top right')
+          .position('bottom right')
       );
     }
   }
