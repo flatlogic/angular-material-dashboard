@@ -1,5 +1,5 @@
 <section>
-    <md-subheader class="md-accent">{{vm.title}}</md-subheader>
+    <md-subheader ng-class="vm.theme">{{vm.title}}</md-subheader>
     <md-list>
         <md-list-item class="md-3-line" ng-repeat="message in vm.messages">
             <img class="md-avatar" ng-src="assets/images/einstein.jpg">

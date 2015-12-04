@@ -11,6 +11,7 @@
             controller: messagesSectionController,
             scope: {
                 title: '@',
+                theme: '@',
                 messages: '='
             },
             controllerAs: 'vm',
@@ -21,6 +22,7 @@
             var vm = this;
 
             vm.title = $scope.title;
+            vm.theme = $scope.theme;
             vm.messages = $scope.messages;
         }
     }
