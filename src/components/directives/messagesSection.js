@@ -8,22 +8,27 @@
     function messagesSectionDirective() {
         return {
             restrict: 'E',
-            controller: messagesSectionController,
             scope: {
                 title: '@',
                 theme: '@',
                 messages: '='
             },
-            controllerAs: 'vm',
-            templateUrl: 'app/views/partials/messages-section.html'
+            template: '' +
+                      '<section>' +
+                      '  <md-subheader ng-class="theme">{{title}}</md-subheader>' +
+                      '  <md-list>' +
+                      '    <md-list-item class="md-3-line" ng-repeat="message in messages">' +
+                      '    <img class="md-avatar" ng-src="assets/images/einstein.jpg">' +
+                      '    <div class="md-list-item-text">' +
+                      '      <h3>{{message.subject}}</h3>' +
+                      '      <h4>{{message.userName}}</h4>' +
+                      '      <p>{{message.text}}</p>' +
+                      '    </div>' +
+                      '    </md-list-item>' +
+                      '  </md-list>' +
+                      '</section>',
+            link : function(scope, element, attrs) {
+            }
         };
-
-        function messagesSectionController($scope) {
-            var vm = this;
-
-            vm.title = $scope.title;
-            vm.theme = $scope.theme;
-            vm.messages = $scope.messages;
-        }
     }
 })();
