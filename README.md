@@ -7,7 +7,7 @@ Responsive Angular admin dashboard with material design based on
 
 ![promo-amd](src/assets/images/promo-amd.png)
 
-Check out [DEMO](http://flatlogic.github.io/angular-material-dashboard/site/)
+Check out [DEMO](http://flatlogic.github.io/angular-material-dashboard/)
 
 ## Getting started
 
@@ -49,6 +49,7 @@ Design by [flatlogic.com](http://flatlogic.com/)
 
 ## Deploy to Github pages  
   
+    $ gulp build
     $ gulp deploy
 
 ## Community
