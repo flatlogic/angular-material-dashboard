@@ -9,14 +9,16 @@
         {{todo.text}}
     </md-checkbox>
 
-    <form ng-submit="vm.addTodo($event)">
-        <md-input-container>
-            <label>Write some todo task here...</label>
-            <input ng-model="vm.todoText">
-        </md-input-container>
-        <md-button class="md-fab md-warn" aria-label="Eat cake">
-            <i class="material-icons">add</i>
-        </md-button>
+    <form ng-submit="vm.addTodo($event)" novalidate name="tasksForm">
+        <div layout="row" flex>
+            <md-input-container flex ng-class="{'md-input-invalid':tasksForm.taskText.$error.required && tasksForm.$submitted}">
+                <label>Write some todo task here...</label>
+                <input ng-model="vm.todoText" name="taskText" required>
+            </md-input-container>
+            <md-button class="md-fab md-wayrn md-mini">
+                <i class="material-icons">add</i>
+            </md-button>
+        </div>
         <md-button class="md-primary" ng-click="vm.archive($event)">
             Remove completed
         </md-button>

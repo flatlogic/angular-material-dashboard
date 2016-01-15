@@ -22,6 +22,7 @@
             });
 
         function addTodo() {
+            if (!vm.todoText) return;
             vm.todos.push({text: vm.todoText, done: false});
             vm.todoText = '';
         }
