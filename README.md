@@ -47,11 +47,9 @@ UI components built with [Angular Material](https://material.angularjs.org/).
 
 Design by [flatlogic.com](http://flatlogic.com/)
 
-## Build to Github pages  
+## Deploy to Github pages  
   
-* Merge *master* to *gh-pages*
-* run `gulp build`
-* Push *gh-pages* branch to remote origin
+    $ gulp deploy
 
 ## Community
 - [Tweet about it](https://twitter.com/intent/tweet?text=Angular%20Material%20Dashboard%20https://github.com/flatlogic/angular-material-dashboard%20via%20@flatlogicinc) to support revolution in classic paid templates market.
