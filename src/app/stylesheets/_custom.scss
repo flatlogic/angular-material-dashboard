@@ -136,6 +136,11 @@ md-radio-button.md-accent.md-checked .md-label span {
   font-size: $font-size-large;
 }
 
+
+md-backdrop.md-sidenav-backdrop {
+  position: fixed;
+}
+
 // libs overrides
 .material-icons {
   vertical-align: middle;
