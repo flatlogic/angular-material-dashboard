@@ -81,16 +81,14 @@ RUN mkdir -p "$GEM_HOME" "$BUNDLE_BIN" \
 # CMD [ "irb" ]
 # End of Ruby Install
 
-# Sails and Stackbutton setup
 WORKDIR /app/
 RUN npm install gulp bower -g
 RUN gem install sass
 ADD package.json /app/
-ADD Gruntfile.js /app/
 ADD bower.json /app/
 ADD .bowerrc /app/
 RUN npm install
 RUN bower install --allow-root
 ADD . .
 
-CMD "gulp serve"
+CMD ["gulp", "serve"]
