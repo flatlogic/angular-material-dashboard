@@ -91,4 +91,6 @@ RUN npm install
 RUN bower install --allow-root
 ADD . .
 
+EXPOSE 3000
+
 CMD ["gulp", "serve"]
