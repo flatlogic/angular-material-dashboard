@@ -9,7 +9,8 @@ var $ = require('gulp-load-plugins')();
 gulp.task('styles', function () {
 
   var sassOptions = {
-    style: 'expanded'
+    style: 'expanded',
+    'sourcemap=none': true
   };
 
   var injectFiles = gulp.src([
