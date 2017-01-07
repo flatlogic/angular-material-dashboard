@@ -10,7 +10,7 @@
     "angular-cookies": "^1.5.0",
     "angular-touch": "^1.5.0",
     "angular-sanitize": "^1.5.0",
-    "angular-ui-router": "^0.2.18",
+    "angular-ui-router": "^0.3.2",
     "angular": "^1.5.0",
     "angular-nvd3": "1.0.0-rc.2",
     "angular-material": "^1.0.6",

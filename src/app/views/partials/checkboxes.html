@@ -15,7 +15,7 @@
                 <label>Write some todo task here...</label>
                 <input ng-model="vm.todoText" name="taskText" required>
             </md-input-container>
-            <md-button class="md-fab md-wayrn md-mini">
+            <md-button class="md-fab md-wayrn md-mini" ng-click="vm.addTodo($event)">
                 <i class="material-icons">add</i>
             </md-button>
         </div>
