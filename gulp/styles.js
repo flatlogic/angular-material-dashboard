@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var paths = gulp.paths;
 
 var $ = require('gulp-load-plugins')();
+// var sass = require('gulp-sass');
 
 gulp.task('styles', function () {
 
@@ -39,7 +40,8 @@ gulp.task('styles', function () {
     .pipe(indexFilter)
     .pipe($.inject(injectFiles, injectOptions))
     .pipe(indexFilter.restore())
-    .pipe($.rubySass(sassOptions)
+    .pipe($.sass(sassOptions)
+    // .pipe($.rubySass(sassOptions)
       .on('error', function (err) {
         console.error('Error!', err.message);
       })
