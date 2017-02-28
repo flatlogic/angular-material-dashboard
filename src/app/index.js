@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies',
-  'ngSanitize', 'ui.router', 'ngMaterial', 'nvd3', 'app'])
+  'ngSanitize', 'ui.router', 'ngMaterial', 'nvd3', 'app' , 'md.data.table'])
 
   .config(function ($stateProvider, $urlRouterProvider, $mdThemingProvider,
                     $mdIconProvider) {
@@ -34,6 +34,15 @@ angular.module('angularMaterialAdmin', ['ngAnimate', 'ngCookies',
         controller: 'TableController',
         controllerAs: 'vm',
         templateUrl: 'app/views/table.html',
+        data: {
+          title: 'Table'
+        }
+      })
+      .state('home.data-table', {
+        url: '/data-table',
+        controller: 'DataTableController',
+        controllerAs: 'vm',
+        templateUrl: 'app/views/data-table.html',
         data: {
           title: 'Table'
         }
