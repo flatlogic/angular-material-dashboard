@@ -7,7 +7,7 @@ Responsive Angular admin dashboard with material design based on
 
 ![promo-amd](src/assets/images/promo-amd.png)
 
-Check out [DEMO](http://flatlogic.github.io/angular-material-dashboard/)
+Check out [DEMO](https://flatlogic.com/admin-dashboards/angular-material-dashboard/demo)
 
 ## Getting started
 
@@ -52,3 +52,10 @@ Design by [flatlogic.com](http://flatlogic.com/)
 - [Tweet about it](https://twitter.com/intent/tweet?text=Angular%20Material%20Dashboard%20https://github.com/flatlogic/angular-material-dashboard%20via%20@flatlogicinc) to support revolution in classic paid templates market.
 - Follow [@flatlogicinc on Twitter](https://twitter.com/flatlogicinc).
 - Subscribe to Flatlogic newsletter at [flatlogic.com](http://flatlogic.com/)
+
+## More from Flatlogic
+- [💥Sing App Dashboard](https://github.com/flatlogic/sing-app) - Free and open-source admin dashboard template built with Bootstrap 4 
+- [React Native Starter](https://github.com/flatlogic/react-native-starter) - 🚀 A powerful react native starter template that bootstraps development of your mobile application
+
+## Premium themes
+Looking for premium themes and templates? Check out our other template at [flatlogic.com](https://flatlogic.com/templates).
