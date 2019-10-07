@@ -39,7 +39,6 @@ gulp.task('styles', function () {
   ])
     .pipe(indexFilter)
     .pipe($.inject(injectFiles, injectOptions))
-    .pipe(indexFilter.restore())
     .pipe($.sass(sassOptions)
     // .pipe($.rubySass(sassOptions)
       .on('error', function (err) {
