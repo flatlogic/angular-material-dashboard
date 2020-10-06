@@ -1,4 +1,9 @@
 # Changelog
+## [1.4.1]
+
+### Updated
+ 
+- Minor packages update
 
 ## [1.4.0]
 
