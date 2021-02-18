@@ -2,12 +2,12 @@
 
 [![Join the chat at https://gitter.im/flatlogic/angular-material-dashboard](https://badges.gitter.im/flatlogic/angular-material-dashboard.svg)](https://gitter.im/flatlogic/angular-material-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+[View Demo](https://flatlogic.com/admin-dashboards/angular-material-dashboard/demo) | [Download](https://github.com/flatlogic/angular-material-dashboard.git) | [More templates](https://flatlogic.com/templates) | [Support forum](https://flatlogic.com/forum)
+
 Responsive Angular admin dashboard with material design based on
 [Angular Material](https://github.com/angular/material).
 
 ![promo-amd](src/assets/images/promo-amd.png)
-
-Check out [DEMO](https://flatlogic.com/admin-dashboards/angular-material-dashboard/demo)
 
 ## Getting started
 
@@ -47,6 +47,9 @@ Design by [flatlogic.com](http://flatlogic.com/)
   
     $ gulp build
     $ gulp deploy
+
+## Support
+For any additional information please go to our [**support forum**](https://flatlogic.com/forum) and raise your questions or feedback provide there. We highly appreciate your participation!
 
 ## Community
 - [Tweet about it](https://twitter.com/intent/tweet?text=Angular%20Material%20Dashboard%20https://github.com/flatlogic/angular-material-dashboard%20via%20@flatlogicinc) to support revolution in classic paid templates market.
