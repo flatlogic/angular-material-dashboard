@@ -18,7 +18,7 @@ Clone project:
 Install dependencies:
 
     $ cd angular-material-dashboard
-    $ npm install
+    $ yarn install
     
 Run development web-server:
 
