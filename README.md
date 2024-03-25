@@ -4,8 +4,7 @@
 
 [View Demo](https://flatlogic.com/admin-dashboards/angular-material-dashboard/demo) | [Download](https://github.com/flatlogic/angular-material-dashboard.git) | [More templates](https://flatlogic.com/templates) | [Support forum](https://flatlogic.com/forum)
 
-Responsive Angular admin dashboard with material design based on
-[Angular Material](https://github.com/angular/material).
+The Angular Material Dashboard provides a responsive admin interface that leverages [Angular Material](https://github.com/angular/material). for its design principles. It embodies the principles of material design, ensuring a cohesive and intuitive user experience, ideal for developing sophisticated [business software](https://flatlogic.com/) dashboards.
 
 ![promo-amd](src/assets/images/promo-amd.png)
 
