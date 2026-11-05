@@ -105,3 +105,5 @@ Internet Explorer's textarea history-cache issue (CVE-2022-25869) remains an
 explicit unverified/unfixed boundary. Current Chrome is tested; IE support and
 a wholly vulnerability-free legacy framework are not claimed. `angular-resource`
 is absent, so its separate service advisory has no installed implementation here.
+
+UI-Router 1.1.2 includes the publisher's URL-matcher ReDoS correction in its bundled core 6.1.2: https://github.com/angular-ui/ui-router/releases/tag/1.1.2. Existing route APIs and application source stay unchanged.
