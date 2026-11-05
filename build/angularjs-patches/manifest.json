@@ -1,0 +1,68 @@
+{
+  "debianSource": "https://deb.debian.org/debian/pool/main/a/angular.js/angular.js_1.8.3-3.debian.tar.xz",
+  "debianArchiveSha256": "525dfe1c2f0a86c083f05ff4aeed8ec1cb0f3403e74a5e74f7c8779ea893e5c4",
+  "libraries": [
+    {
+      "package": "angular",
+      "version": "1.8.3",
+      "source": "angular.js",
+      "minified": "angular.min.js",
+      "sourceSha256": "fdca889e76f55fdee7ab661920f37ce19233563bf7f4ac8120f8ebc2ac768768",
+      "minifiedSha256": "396dc1a03d6cc02e9c51a80246e0db53c5c8df9bd07287e3b51bce4a29dab355",
+      "patches": [
+        {
+          "file": "CVE-2022-25844.patch",
+          "sha256": "05385917548521f44b0564f19f85b5e46f82e64ceba2051679b423337fe3a11b"
+        },
+        {
+          "file": "CVE-2023-26116.patch",
+          "sha256": "0d596765e86a2ce69116dcc801494030f4520bde880aaeaca01b837cc13b8273"
+        },
+        {
+          "file": "CVE-2023-26118.patch",
+          "sha256": "8f5157616674bae3a787f3003474f2e6ebedbeb120915bad4399a086b8c72de3"
+        },
+        {
+          "file": "CVE-2024-21490.patch",
+          "sha256": "2e46b50cde3995857420dd9bebed429a534cca7edcfbbcec5135a26234f2a6f4"
+        },
+        {
+          "file": "CVE-2024-8373.patch",
+          "sha256": "2657f115e5d3bf4eaf86f63a36f13bc74e856d758b9cb2da4ca8c784968f63be"
+        },
+        {
+          "file": "CVE-2025-0716.patch",
+          "sha256": "c08d1d1f198ae0e4845b751b7a0b6b5c0e8ab28f74f3c1777e8444495f07325c"
+        },
+        {
+          "file": "CVE-2026-11998-local.patch",
+          "sha256": "a6b9a6a47c75e26611e91d77ec368d7dc401d70559a52caeef847c57a9f92bdf"
+        },
+        {
+          "file": "srcset-data-url-compat-local.patch",
+          "sha256": "6905e8b4889e0ebb5cfadd0bdfd1a9bc944a828fba14df2039c805868753a108"
+        }
+      ],
+      "mapSha256": "741840b37716658c55a3c25bb5dbc6f18a3f328abe9c2d2781cbc1fa64c231dc"
+    },
+    {
+      "package": "angular-sanitize",
+      "version": "1.8.3",
+      "source": "angular-sanitize.js",
+      "minified": "angular-sanitize.min.js",
+      "sourceSha256": "c84c65250afe5a1265f36a7e16c6010652e55c2ae3a779c351fb68536c42bf64",
+      "minifiedSha256": "cc80a30ad0439c2e9c209b3d7fcffb1d10e6007fd1d00c9cc144f393664a7045",
+      "patches": [
+        {
+          "file": "CVE-2025-2336.patch",
+          "sha256": "dd3f87cb54bf1dae80b9bf4a87b6cb7cc9a5ecc6d71d1667afc01182022ae876"
+        },
+        {
+          "file": "CVE-2025-4690-local.patch",
+          "sha256": "ddd6f9d2aaa0a04268191e6f84169d185a6880e6463e07dab4612c15c36957b6"
+        }
+      ],
+      "mapSha256": "d6159aa6511a22ec9ace6d59551251aff8b9a0adeb5d1863d245d86dad2f3fa2"
+    }
+  ]
+}

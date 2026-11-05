@@ -86,6 +86,22 @@ updated to their final public releases here, but npm audit zero must not be read
 as a claim that these EOL browser frameworks have no known security issues.
 Migrating the complete UI to another framework is a separate product migration.
 
-Known upstream examples with no public patched AngularJS release:
-[the SCE policy bypass](https://github.com/advisories/GHSA-7x27-g8rg-x87w) and
-[angular-sanitize filtering](https://github.com/advisories/GHSA-4p4w-6hg8-63wx).
+The November security followup applies verified public Debian backports and
+small local fixes while preserving AngularJS 1.8.3 APIs and application routes.
+[The exact patch manifest, provenance and verification boundaries](build/angularjs-patches/README.md)
+cover SCE URL matching, SVG/image policies, currency/copy/URL/srcset DoS and the
+linky filter. Both raw/minified browser distributions and source maps are updated
+after exact-input verification; unknown changes fail loudly. Existing package
+version metadata remains unchanged, so upstream advisories remain visible.
+
+The official Debian srcset patch also needed a local compatibility correction
+to retain valid data URLs without restoring the vulnerable regex. Browser tests
+exercise actual framework APIs with allowed/rejected policies, exploit-sized
+inputs, valid data URLs and the normal dashboard/profile/table routes. The build
+minifier lock is refreshed within its existing UglifyJS 3 range to parse the
+backports' JavaScript syntax.
+
+Internet Explorer's textarea history-cache issue (CVE-2022-25869) remains an
+explicit unverified/unfixed boundary. Current Chrome is tested; IE support and
+a wholly vulnerability-free legacy framework are not claimed. `angular-resource`
+is absent, so its separate service advisory has no installed implementation here.

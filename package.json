@@ -33,7 +33,9 @@
     "ng-annotate-patched": "^1.15.0",
     "sass": "^1.107.0",
     "through2": "^4.0.2",
-    "@playwright/test": "^1.64.1"
+    "@playwright/test": "^1.64.1",
+    "diff": "^8.0.4",
+    "terser": "^5.44.0"
   },
   "engines": {
     "node": ">=22.23.0"
@@ -41,9 +43,9 @@
   "scripts": {
     "start": "gulp serve",
     "build": "gulp",
-    "install:client": "bower install",
+    "install:client": "bower install && node build/patch-angularjs.cjs",
     "test": "gulp test",
-    "test:build": "node --test tests/build.test.cjs",
+    "test:build": "node --test tests/*.test.cjs",
     "test:e2e": "playwright test",
     "init": "npm ci && npm run install:client"
   }

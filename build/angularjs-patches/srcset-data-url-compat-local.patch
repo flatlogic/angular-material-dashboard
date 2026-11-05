@@ -1,0 +1,64 @@
+Index: angular.js
+===================================================================
+--- angular.js	AngularJS1.8.3 with Debian security backports
++++ angular.js	Local linear HTML srcset tokenization compatibility fix
+@@ -9407,17 +9407,52 @@
+       if (!isString(value)) {
+         throw $compileMinErr('srcset', 'Can\'t pass trusted values to `{0}`: "{1}"', invokeType, value.toString());
+       }
+ 
+-      var srcSetValues = value.split(',')
++      // Follow HTML's URL/descriptor boundaries: commas can be part of data URLs.
++      // Each character is scanned once; descriptor validity stays with the browser.
+       var sanitisedSrcSet = [];
+-      for (const srcSetValue of srcSetValues) {
+-        const wellTrimmedSrcSetValue = srcSetValue.trim().replace(/\s{2,}/, ' ');
+-        const srcSplit = wellTrimmedSrcSetValue.split(' ');
+-        const uri = $sce.getTrustedMediaUrl(srcSplit[0]);
+-        sanitisedSrcSet.push(`${uri}${srcSplit[1] !== undefined ? " " + srcSplit[1] : ""}`)
++      var position = 0;
++      var whitespace = /[\t\n\f\r ]/;
++      while (position < value.length) {
++        while (position < value.length &&
++               (whitespace.test(value.charAt(position)) || value.charAt(position) === ',')) {
++          position++;
++        }
++        var urlStart = position;
++        while (position < value.length && !whitespace.test(value.charAt(position))) {
++          position++;
++        }
++        var url = value.slice(urlStart, position);
++        var descriptor = '';
++        if (url.charAt(url.length - 1) === ',') {
++          var end = url.length;
++          while (url.charAt(end - 1) === ',') {
++            end--;
++          }
++          url = url.slice(0, end);
++        } else {
++          var descriptorStart = position;
++          var inParens = false;
++          while (position < value.length) {
++            var character = value.charAt(position);
++            if (character === ',' && !inParens) {
++              break;
++            }
++            if (character === '(') {
++              inParens = true;
++            } else if (character === ')') {
++              inParens = false;
++            }
++            position++;
++          }
++          descriptor = trim(value.slice(descriptorStart, position)).replace(/\s+/g, ' ');
++        }
++        if (url) {
++          var uri = $sce.getTrustedMediaUrl(url);
++          sanitisedSrcSet.push(uri + (descriptor ? ' ' + descriptor : ''));
++        }
+       }
+-
+       return sanitisedSrcSet.join(',');
+     }
+ 
+ 
