@@ -1,0 +1,16 @@
+const { test, expect } = require('@playwright/test')
+test('built dashboard renders charts and preserves profile/table routes', async ({ page }) => {
+  const errors = []
+  page.on('pageerror', (error) => errors.push(error.message))
+  await page.goto('/')
+  await expect(page).toHaveURL(/#!\/dashboard$/)
+  await expect(page.getByText('Site visitors', { exact: true })).toBeVisible()
+  await expect(page.locator('nvd3 svg').first()).toBeVisible()
+  await page.goto('/#!/profile')
+  await expect(page.locator('input').first()).toBeVisible()
+  await page.goto('/#!/table')
+  await expect(page.getByText('Nested views', { exact: true })).toBeVisible()
+  await page.goto('/#!/data-table')
+  await expect(page.locator('table')).toBeVisible()
+  expect(errors).toEqual([])
+})

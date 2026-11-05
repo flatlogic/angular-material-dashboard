@@ -1,4 +1,4 @@
- /*jshint unused:false */
+/*jshint unused:false */
 
 /***************
 
@@ -13,27 +13,27 @@
 
 ***************/
 
-'use strict';
+'use strict'
 
-var httpProxy = require('http-proxy');
-var chalk = require('chalk');
+var httpProxy = require('http-proxy')
+var chalk = require('chalk')
 
 /*
  * Location of your backend server
  */
-var proxyTarget = 'http://server/context/';
+var proxyTarget = 'http://server/context/'
 
 var proxy = httpProxy.createProxyServer({
   target: proxyTarget
-});
+})
 
-proxy.on('error', function(error, req, res) {
+proxy.on('error', function (error, req, res) {
   res.writeHead(500, {
     'Content-Type': 'text/plain'
-  });
+  })
 
-  console.error(chalk.red('[Proxy]'), error);
-});
+  console.error(chalk.red('[Proxy]'), error)
+})
 
 /*
  * The proxy middleware is an Express middleware added to BrowserSync to
@@ -48,10 +48,14 @@ function proxyMiddleware(req, res, next) {
    * for your needs. If you can, you could also check on a context in the url which
    * may be more reliable but can't be generic.
    */
-  if (/\.(html|css|js|png|jpg|jpeg|gif|ico|xml|rss|txt|eot|svg|ttf|woff|cur)(\?((r|v|rel|rev)=[\-\.\w]*)?)?$/.test(req.url)) {
-    next();
+  if (
+    /\.(html|css|js|png|jpg|jpeg|gif|ico|xml|rss|txt|eot|svg|ttf|woff|cur)(\?((r|v|rel|rev)=[\-\.\w]*)?)?$/.test(
+      req.url
+    )
+  ) {
+    next()
   } else {
-    proxy.web(req, res);
+    proxy.web(req, res)
   }
 }
 
@@ -62,4 +66,4 @@ function proxyMiddleware(req, res, next) {
  */
 
 //module.exports = [proxyMiddleware];
-module.exports = [];
+module.exports = []

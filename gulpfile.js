@@ -1,16 +1,16 @@
-'use strict';
+'use strict'
 
-var gulp = require('gulp');
+var gulp = require('gulp')
 
 gulp.paths = {
   src: 'src',
   dist: 'dist',
   tmp: '.tmp',
   e2e: 'e2e'
-};
+}
 
-require('require-dir')('./gulp');
+;['styles', 'inject', 'watch', 'build', 'server', 'unit-tests', 'deploy'].forEach(function (file) {
+  require('./gulp/' + file)
+})
 
-gulp.task('default', ['clean'], function () {
-    gulp.start('build');
-});
+gulp.task('default', gulp.series('clean', 'build'))
