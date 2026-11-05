@@ -5,3 +5,6 @@ bower_components/
 dist/
 .idea/
 .publish/
+
+test-results/
+playwright-report/

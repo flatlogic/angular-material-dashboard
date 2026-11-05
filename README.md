@@ -61,3 +61,31 @@ For any additional information please go to our [**support forum**](https://flat
 
 ## Premium themes
 Looking for premium themes and templates? Check out our other template at [flatlogic.com](https://flatlogic.com/templates).
+
+## Dependency maintenance
+
+Use Node 22.23 or newer and npm. Install with `npm ci`, then run
+`npm run install:client` to install the pinned Bower browser assets. The build
+uses Gulp 5 and Dart Sass; `npm run build` creates `dist`. `npm start` serves the
+source app without opening a browser. `npm run test:build`, `npm test` (set
+`CHROME_BIN` to installed Chrome when needed), and `npm run test:e2e` exercise the
+actual template, including production bundles and navigation. Playwright uses
+installed Chrome; no browser download is required. `gulp deploy` retains the
+GitHub Pages publish capability through the maintained gh-pages API and is not
+part of build/test checks.
+
+Gulp filters explicitly include dot paths so builds under `.codex` process their
+CSS/JavaScript. Binary images/fonts are copied without text decoding. The former
+Protractor spec had no assertions and referenced a missing generator config; the
+Chrome navigation regression replaces it. Existing AngularJS services now have
+real asynchronous data tests.
+
+The npm audit covers build dependencies. Browser packages installed by Bower are
+separate: AngularJS and AngularJS Material have ended upstream support. They are
+updated to their final public releases here, but npm audit zero must not be read
+as a claim that these EOL browser frameworks have no known security issues.
+Migrating the complete UI to another framework is a separate product migration.
+
+Known upstream examples with no public patched AngularJS release:
+[the SCE policy bypass](https://github.com/advisories/GHSA-7x27-g8rg-x87w) and
+[angular-sanitize filtering](https://github.com/advisories/GHSA-4p4w-6hg8-63wx).
